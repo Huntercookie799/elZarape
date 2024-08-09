@@ -1,0 +1,213 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!--Bootstrap 5 icons CDN-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+    <title>CATÁLOGO PERSONA</title>
+
+    <link rel="stylesheet" href="../style.css">
+</head>
+
+<body>
+
+
+    <section class="p-3">
+
+        <div class="row">
+            <h1>CATÁLOGO PERSONA</h1>
+            <div class="col-12">
+                <button class="btn btn-primary newUser" data-bs-toggle="modal" data-bs-target="#userForm">NUEVA PERSONA<i class="bi bi-people"></i></button>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-12">
+                <table class="table table-striped table-hover mt-3 text-center table-bordered">
+
+                    <thead>
+                        <tr>
+                            <th>Imagen</th>
+                            <th>Nombre</th>
+                            <th>A_Paterno</th>
+                            <th>A_Materno</th>
+                            <th>Edad</th>
+                            <th>Acciones</th>
+                        </tr>
+                    </thead>
+
+                    <tbody id="data">
+                        <tr>
+                            <td><img src="imgP/Alejandro.jfif" alt="" width="50" height="50"></td>
+                            <td>Alejandro</td>
+                            <td>Romero</td>
+                            <td>Aranda</td>
+                            <td>23</td>
+                            <td>
+                                <button class="btn btn-success"><i class="bi bi-eye"></i></button>
+                                <button class="btn btn-primary"><i class="bi bi-pencil-square"></i></i></button>
+                                <button class="btn btn-danger"><i class="bi bi-trash"></i></i></button>
+
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><img src="imgP/Edith.jfif" alt="" width="50" height="50"></td>
+                            <td>Edith</td>
+                            <td>Hernandez</td>
+                            <td>Palma</td>
+                            <td>27</td>
+                            <td>
+                                <button class="btn btn-success"><i class="bi bi-eye"></i></button>
+                                <button class="btn btn-primary"><i class="bi bi-pencil-square"></i></i></button>
+                                <button class="btn btn-danger"><i class="bi bi-trash"></i></i></button>
+
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><img src="imgP/Luis.jfif" alt="" width="50" height="50"></td>
+                            <td>Luis</td>
+                            <td>Venegas</td>
+                            <td>Gonzales</td>
+                            <td>30</td>
+                            <td>
+                                <button class="btn btn-success"><i class="bi bi-eye"></i></button>
+                                <button class="btn btn-primary"><i class="bi bi-pencil-square"></i></i></button>
+                                <button class="btn btn-danger"><i class="bi bi-trash"></i></i></button>
+
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><img src="imgP/Nanci.jfif" alt="" width="50" height="50"></td>
+                            <td>Nanci</td>
+                            <td>Lopez</td>
+                            <td>Chavez</td>
+                            <td>25</td>
+                            <td>
+                                <button class="btn btn-success"><i class="bi bi-eye"></i></button>
+                                <button class="btn btn-primary"><i class="bi bi-pencil-square"></i></i></button>
+                                <button class="btn btn-danger"><i class="bi bi-trash"></i></i></button>
+
+                            </td>
+                        </tr>
+                    </tbody>
+
+                </table>
+            </div>
+        </div>
+
+    </section>
+
+
+    <!--Modal Form-->
+    <div class="modal fade" id="userForm">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+
+                <div class="modal-header">
+                    <h4 class="modal-title">DETALLE DE CATÁLOGO</h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+
+                <div class="modal-body">
+
+                    <form action="#" id="myForm">
+
+                        <div class="card imgholder">
+                            <label for="imgInput" class="upload">
+                                <input type="file" name="" id="imgInput">
+                                <i class="bi bi-plus-circle-dotted"></i>
+                            </label>
+                            <img src="img/paz.jpg" alt="" width="200" height="200" class="img">
+                        </div>
+
+                        <div class="inputField">
+                            <div>
+                                <label for="name">Nombre:</label>
+                                <input type="text" name="" id="name" required>
+                            </div>
+                            <div>
+                                <label for="A_P">A_Paterno:</label>
+                                <input type="number" name="" id="A_P" required>
+                            </div>
+                            <div>
+                                <label for="A_M">A_Materno:</label>
+                                <input type="text" name="" id="A_M" required>
+                            </div>
+                            <div>
+                                <label for="age">Edad:</label>
+                                <input type="number" name="" id="age" required>
+                            </div>
+
+                        </div>
+
+                    </form>
+                </div>
+
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                    <button type="submit" form="myForm" class="btn btn-primary submit">Guardar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Read Data Modal-->
+    <div class="modal fade" id="readData">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+
+                <div class="modal-header">
+                    <h4 class="modal-title">Profile</h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+
+                <div class="modal-body">
+
+                    <form action="#" id="myForm">
+
+                        <div class="card imgholder">
+                            <img src="img/paz.jpg" alt="" width="200" height="200" class="showImg">
+                        </div>
+
+                        <div class="inputField">
+                            <div>
+                                <label for="name">Nombre:</label>
+                                <input type="text" name="" id="showName" disabled>
+                            </div>
+                            <div>
+                                <label for="A_P">A_Parterno:</label>
+                                <input type="number" name="" id="showA_P" disabled>
+                            </div>
+                            <div>
+                                <label for="A_M">A_Materno:</label>
+                                <input type="text" name="" id="showA_M" disabled>
+                            </div>
+                            <div>
+                                <label for="age">Edad:</label>
+                                <input type="number" name="" id="showage" disabled>
+                            </div>
+
+                        </div>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <script src="app.js"></script>
+</body>
+
+</html>

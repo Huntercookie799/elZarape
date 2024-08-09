@@ -1,0 +1,77 @@
+:root {
+    --body-color: #fef3e2;
+    --sidebar-color: #faaf08;
+    --primary-color: #fa812f;
+    --primary-color-light: #fefff5;
+    --toggle-color: #fa4032;
+    --text-color: #707070;
+    --table-header-bg: #fa812f;
+    --table-header-color: #fff;
+    --table-row-bg: #fff;
+    --table-row-hover-bg: #faaf08;
+    --font-size: 0.8rem; 
+    --label-color: #707070;
+}
+
+.modal-dialog.modal-lg {
+    max-width: 90%;
+    margin: 1.75rem auto;
+    max-height: 90%;
+}
+
+.card {
+    width: 400px;
+    height: 400px;
+    object-fit: cover; 
+}
+
+.modal-content {
+    border-radius: 0.5rem;
+    background-color: var(--body-color);
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+#myForm {
+    height: 100%;
+    max-height: 100%;
+    overflow-y: auto;
+}
+
+.inputField {
+    overflow-y: auto;
+    box-sizing: border-box;
+}
+
+.modal-body form .imgholder {
+    height: 100%;
+    max-height: 100%;
+    width: auto;
+    max-width: 500px;
+    overflow-y: auto;
+    box-sizing: border-box;
+}
+
+.modal-title{
+    color: white;
+}
+
+.d-none {
+    display: none;
+}
+
+#comboDetailsTable {
+    max-height: 300px;
+    overflow-y: auto;
+}
+
+.table-container {
+    position: relative;
+}
+
+.table-wrapper {
+    max-height: 200px;
+    overflow-y: auto;
+}

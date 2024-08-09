@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menú de Restaurante</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <a class="navbar-brand" href="#">
+            <img src="imgP/logo.png" width="30" height="30" alt="Logo">
+        </a>
+        <span class="navbar-text mx-auto">EL ZARAPE</span>
+
+    </nav>
+
+    <div class="container mt-4">
+        <header class="text-center mb-4">
+            <button id="btnPlatillos" class="btn btn-primary mx-2">Platillos</button>
+            <button id="btnBebidas" class="btn btn-primary mx-2">Bebidas</button>
+            <button id="btnCombos" class="btn btn-primary mx-2">Combos</button>
+            <br><br>
+        <center>
+            <div class="ml-auto">
+                <select class="form-control" id="sucursalSelect">
+                    <option value="ubicacion1">Sucursal 1</option>
+                    <option value="ubicacion2">Ubicación 2</option>
+                    <option value="ubicacion3">Ubicación 3</option>
+                </select>
+            </div>
+        </center>
+        </header>
+        <div class="row">
+            <div id="categorias" class="row">
+                <!-- Categorías dinámicas generadas por JavaScript -->
+            </div>
+        </div>
+        <aside id="carrito" class="p-3">
+            <br><br>
+            <h2>Compras</h2>
+            <ul id="listaCarrito">
+            </ul>
+            <p>Total: $<span id="totalCarrito">0.00</span></p>
+            <button id="btnPagar" class="btn btn-success">Pagar</button> <!-- Botón de Pagar -->
+        </aside>
+    </div>
+
+    <button id="btnToggleCarrito" class="btn btn-secondary mt-2">Ocultar Carrito</button> <!-- Botón Ver/Ocultar Carrito -->
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,55 @@
+:root {
+    /* ===== Colors ===== */
+    --body-color: #fef3e2;
+    --sidebar-color: #faaf08;
+    --primary-color: #fa812f;
+    --primary-color-light: #fefff5;
+    --toggle-color: #fa4032;
+    --text-color: #707070;
+    --table-header-bg: #fa812f;
+    --table-header-color: #fff;
+    --table-row-bg: #fff;
+    --table-row-hover-bg: #faaf08;
+}
+
+
+.sub-table {
+    display: none;
+    margin: 10px 0;
+}
+
+.sub-table table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.sub-table th, .sub-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+.sub-table th {
+    background-color: #000000;
+}
+
+.expand-btn {
+    cursor: pointer;
+}
+
+.sub-table td {
+    background-color: #f1f1f1;
+}
+
+.sub-table thead th {
+    background-color: var(--primary-color);
+}
+
+.sub-table td[colspan]:hover {
+    background-color: #e9ecef;
+}
+
+.img-thumbnail {
+    max-width: 200px;
+    max-height: 200px;
+    object-fit: cover; /* Mantiene la proporción de la imagen y recorta si es necesario */
+}

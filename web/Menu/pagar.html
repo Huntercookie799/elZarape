@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ticket de Compra</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/qrcode@1.4.4/build/qrcode.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jsbarcode@3.11.5/dist/JsBarcode.all.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1 class="text-center">Ticket de Compra</h1>
+        <div class="row mt-4">
+            <div class="col-md-8">
+                <div id="ticket">
+                    <!-- Ticket generado por JavaScript -->
+                </div>
+            </div>
+            <div class="col-md-4 text-center">
+                <div id="qrCode"></div>
+                <svg id="barcode"></svg>
+            </div>
+        </div>
+    </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const carritoCompras = JSON.parse(localStorage.getItem('carritoCompras')) || [];
+            const total = localStorage.getItem('totalCarrito') || '0.00';
+
+            const ticketDiv = document.getElementById('ticket');
+            if (carritoCompras.length === 0) {
+                ticketDiv.innerHTML = '<p>No hay productos en el carrito.</p>';
+                return;
+            }
+
+            let ticketHTML = '<table class="table table-bordered">';
+            ticketHTML += '<thead><tr><th>Producto</th><th>Cantidad</th><th>Precio</th></tr></thead><tbody>';
+
+            carritoCompras.forEach(producto => {
+                ticketHTML += `<tr>
+                    <td>${producto.nombre}</td>
+                    <td>${producto.cantidad}</td>
+                    <td>$${(producto.precio * producto.cantidad).toFixed(2)}</td>
+                </tr>`;
+            });
+
+            ticketHTML += `<tr><td colspan="2"><strong>Total</strong></td><td><strong>$${total}</strong></td></tr>`;
+            ticketHTML += '</tbody></table>';
+
+            ticketDiv.innerHTML = ticketHTML;
+
+            // Generar QR con el número 12345
+            const qrCodeDiv = document.getElementById('qrCode');
+            QRCode.toCanvas(qrCodeDiv, '12345', { width: 128, height: 128 });
+
+            // Generar código de barras con el número 12345
+            JsBarcode("#barcode", "12345", {
+                format: "CODE128",
+                displayValue: true,
+                fontSize: 18,
+                height: 60
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!--Bootstrap 5 icons CDN-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+    <title>CATÁLOGO PRODUCTO COMBO</title>
+
+    <link rel="stylesheet" href="../style.css">
+</head>
+
+<body>
+
+
+    <section class="p-3">
+
+        <div class="row">
+            <h1>CATÁLOGO PRODUCTO COMBO</h1>
+            <div class="col-12">
+                <button class="btn btn-primary newUser" data-bs-toggle="modal" data-bs-target="#userForm">NUEVO PRODUCTO DE COMBO<i class="bi bi-people"></i></button>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-12">
+                <table class="table table-striped table-hover mt-3 text-center table-bordered">
+
+                    <thead>
+                        <tr>
+                            <th>Producto</th>
+                            <th>Cantidad</th>
+                            <th>Acciones</th>
+                        </tr>
+                    </thead>
+
+                    <tbody id="data">
+                        <tr>
+                            <td>Refresco de cola</td>
+                            <td>1</td>
+                            <td>
+                                <button class="btn btn-success"><i class="bi bi-eye"></i></button>
+                                <button class="btn btn-primary"><i class="bi bi-pencil-square"></i></i></button>
+                                <button class="btn btn-danger"><i class="bi bi-trash"></i></i></button>
+
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Hamburguesa Sencilla</td>
+                            <td>2</td>
+                            <td>
+                                <button class="btn btn-success"><i class="bi bi-eye"></i></button>
+                                <button class="btn btn-primary"><i class="bi bi-pencil-square"></i></i></button>
+                                <button class="btn btn-danger"><i class="bi bi-trash"></i></i></button>
+
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Taco de Pastor</td>
+                            <td>2</td>
+                            <td>
+                                <button class="btn btn-success"><i class="bi bi-eye"></i></button>
+                                <button class="btn btn-primary"><i class="bi bi-pencil-square"></i></i></button>
+                                <button class="btn btn-danger"><i class="bi bi-trash"></i></i></button>
+
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Taco de Carne Asada</td>
+                            <td>2</td>
+                            <td>
+                                <button class="btn btn-success"><i class="bi bi-eye"></i></button>
+                                <button class="btn btn-primary"><i class="bi bi-pencil-square"></i></i></button>
+                                <button class="btn btn-danger"><i class="bi bi-trash"></i></i></button>
+
+                            </td>
+                        </tr>
+                    </tbody>
+
+                </table>
+            </div>
+        </div>
+
+    </section>
+
+
+    <!--Modal Form-->
+    <div class="modal fade" id="userForm">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+
+                <div class="modal-header">
+                    <h4 class="modal-title">DETALLE DE CATÁLOGO</h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+
+                <div class="modal-body">
+
+                    <form action="#" id="myForm">
+
+                        <div class="inputField">
+                            <div>
+                                <label for="cant">Cantidad:</label>
+                                <input type="number" name="" id="cant" required>
+                            </div>
+                        </div>
+
+                    </form>
+                </div>
+
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                    <button type="submit" form="myForm" class="btn btn-primary submit">Guardar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Read Data Modal-->
+    <div class="modal fade" id="readData">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+
+                <div class="modal-header">
+                    <h4 class="modal-title">Profile</h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+
+                <div class="modal-body">
+
+                    <form action="#" id="myForm">
+
+                        <div class="card imgholder">
+                            <img src="img/paz.jpg" alt="" width="200" height="200" class="showImg">
+                        </div>
+
+                        <div class="inputField">
+                            <div>
+                                <label for="cant">Cantidad:</label>
+                                <input type="number" name="" id="showcant" disabled>
+                            </div>
+                        </div>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <script src="app.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,288 @@
+[
+  {
+    "baja": null,
+    "foto": "",
+    "combo_id": 1,
+    "combo_nombre": "Almuerzo de gringo",
+    "combo_precio": 111.0,
+    "combo_articulos": [
+      {
+        "id_producto": 14,
+        "tipo_producto": { "tipo_producto": "Alimento", "id_tipo_producto": 1 },
+        "nombre_articulo": "Hamburguesa sencilla",
+        "cantidad_producto": 2,
+        "categoria_producto": { "categoria": "Ensaladas", "id_categoria": 2 },
+        "descripcion_articulo": "Pan con carne,lechuga,jitomate y cebolla"
+      },
+      {
+        "id_producto": 15,
+        "tipo_producto": { "tipo_producto": "Bebida", "id_tipo_producto": 2 },
+        "nombre_articulo": "Coca-cola",
+        "cantidad_producto": 1,
+        "categoria_producto": { "categoria": "Fruta", "id_categoria": 1 },
+        "descripcion_articulo": "Coca-cola"
+      }
+    ],
+    "combo_descripcion": "Dos hamburguesas sencillas con dos refrescos del sabor de su preferencia"
+  },
+  {
+    "baja": null,
+    "foto": "",
+    "combo_id": 2,
+    "combo_nombre": "A la mexicana",
+    "combo_precio": 50.0,
+    "combo_articulos": [
+      {
+        "id_producto": 2,
+        "tipo_producto": { "tipo_producto": "Alimento", "id_tipo_producto": 1 },
+        "nombre_articulo": "Taco de carnitas",
+        "cantidad_producto": 2,
+        "categoria_producto": { "categoria": "Ensaladas", "id_categoria": 2 },
+        "descripcion_articulo": "Tacos de carne a elegir"
+      },
+      {
+        "id_producto": 1,
+        "tipo_producto": { "tipo_producto": "Alimento", "id_tipo_producto": 1 },
+        "nombre_articulo": "Taco de casa",
+        "cantidad_producto": 2,
+        "categoria_producto": { "categoria": "Ensaladas", "id_categoria": 2 },
+        "descripcion_articulo": "Taco con variedad de carne"
+      }
+    ],
+    "combo_descripcion": "Dos tacos al pastor, dos tacos de carne azada"
+  },
+  {
+    "baja": null,
+    "foto": "",
+    "combo_id": 3,
+    "combo_nombre": "Combo Familiar",
+    "combo_precio": 120.0,
+    "combo_articulos": [
+      {
+        "id_producto": 1,
+        "tipo_producto": { "tipo_producto": "Alimento", "id_tipo_producto": 1 },
+        "nombre_articulo": "Taco de casa",
+        "cantidad_producto": 4,
+        "categoria_producto": { "categoria": "Ensaladas", "id_categoria": 2 },
+        "descripcion_articulo": "Taco con variedad de carne"
+      },
+      {
+        "id_producto": 15,
+        "tipo_producto": { "tipo_producto": "Bebida", "id_tipo_producto": 2 },
+        "nombre_articulo": "Coca-cola",
+        "cantidad_producto": 2,
+        "categoria_producto": { "categoria": "Fruta", "id_categoria": 1 },
+        "descripcion_articulo": "Coca-cola"
+      }
+    ],
+    "combo_descripcion": "Cuatro tacos de pollo, dos refrescos y guacamole"
+  },
+  {
+    "baja": null,
+    "foto": "",
+    "combo_id": 4,
+    "combo_nombre": "Fiesta Mexicana",
+    "combo_precio": 150.0,
+    "combo_articulos": [
+      {
+        "id_producto": 9,
+        "tipo_producto": { "tipo_producto": "Alimento", "id_tipo_producto": 1 },
+        "nombre_articulo": "Pozole",
+        "cantidad_producto": 1,
+        "categoria_producto": { "categoria": "Ensaladas", "id_categoria": 2 },
+        "descripcion_articulo": "Pozole rojo y verde"
+      },
+      {
+        "id_producto": 4,
+        "tipo_producto": { "tipo_producto": "Alimento", "id_tipo_producto": 1 },
+        "nombre_articulo": "Enchilada",
+        "cantidad_producto": 3,
+        "categoria_producto": { "categoria": "Ensaladas", "id_categoria": 2 },
+        "descripcion_articulo": "Enchiladas con salsa roja"
+      }
+    ],
+    "combo_descripcion": "Tres enchiladas, un pozole y dos aguas frescas"
+  },
+  {
+    "baja": null,
+    "foto": "",
+    "combo_id": 5,
+    "combo_nombre": "Combo Tacos",
+    "combo_precio": 140.0,
+    "combo_articulos": [
+      {
+        "id_producto": 24,
+        "tipo_producto": { "tipo_producto": "Alimento", "id_tipo_producto": 1 },
+        "nombre_articulo": "Tacos de barbacoa",
+        "cantidad_producto": 6,
+        "categoria_producto": { "categoria": "Ensaladas", "id_categoria": 2 },
+        "descripcion_articulo": "Tortillas con carne a elegir, cebolla y cilantro"
+      },
+      {
+        "id_producto": 15,
+        "tipo_producto": { "tipo_producto": "Bebida", "id_tipo_producto": 2 },
+        "nombre_articulo": "Coca-cola",
+        "cantidad_producto": 3,
+        "categoria_producto": { "categoria": "Fruta", "id_categoria": 1 },
+        "descripcion_articulo": "Coca-cola"
+      }
+    ],
+    "combo_descripcion": "Seis tacos de barbacoa y tres refrescos"
+  },
+  {
+    "baja": null,
+    "foto": "",
+    "combo_id": 6,
+    "combo_nombre": "Combo Burrito",
+    "combo_precio": 85.0,
+    "combo_articulos": [
+      {
+        "id_producto": 18,
+        "tipo_producto": { "tipo_producto": "Alimento", "id_tipo_producto": 1 },
+        "nombre_articulo": "Nachos",
+        "cantidad_producto": 1,
+        "categoria_producto": { "categoria": "Ensaladas", "id_categoria": 2 },
+        "descripcion_articulo": "Nachos con queso, jalapeños "
+      },
+      {
+        "id_producto": 21,
+        "tipo_producto": { "tipo_producto": "Alimento", "id_tipo_producto": 1 },
+        "nombre_articulo": "Taco de pescado",
+        "cantidad_producto": 2,
+        "categoria_producto": { "categoria": "Ensaladas", "id_categoria": 2 },
+        "descripcion_articulo": "Taco de pescado empanizado con salsa de chipotle"
+      }
+    ],
+    "combo_descripcion": "Un burrito de carne, nachos y un refresco"
+  },
+  {
+    "baja": null,
+    "foto": "",
+    "combo_id": 7,
+    "combo_nombre": "Combo Vegetariano",
+    "combo_precio": 70.0,
+    "combo_articulos": [
+      {
+        "id_producto": 20,
+        "tipo_producto": { "tipo_producto": "Alimento", "id_tipo_producto": 1 },
+        "nombre_articulo": "Flan",
+        "cantidad_producto": 1,
+        "categoria_producto": { "categoria": "Ensaladas", "id_categoria": 2 },
+        "descripcion_articulo": "Flan tradicional mexicano con caramelo"
+      },
+      {
+        "id_producto": 22,
+        "tipo_producto": { "tipo_producto": "Alimento", "id_tipo_producto": 1 },
+        "nombre_articulo": "Quesadilla de hongos",
+        "cantidad_producto": 1,
+        "categoria_producto": { "categoria": "Ensaladas", "id_categoria": 2 },
+        "descripcion_articulo": "Quesadilla con champiñones y queso"
+      }
+    ],
+    "combo_descripcion": "Quesadilla de hongos, sopa de tortilla y agua de tamarindo"
+  },
+  {
+    "baja": null,
+    "foto": "",
+    "combo_id": 8,
+    "combo_nombre": "Combo Tacos de Pescado",
+    "combo_precio": 65.0,
+    "combo_articulos": [
+      {
+        "id_producto": 18,
+        "tipo_producto": { "tipo_producto": "Alimento", "id_tipo_producto": 1 },
+        "nombre_articulo": "Nachos",
+        "cantidad_producto": 1,
+        "categoria_producto": { "categoria": "Ensaladas", "id_categoria": 2 },
+        "descripcion_articulo": "Nachos con queso, jalapeños "
+      },
+      {
+        "id_producto": 21,
+        "tipo_producto": { "tipo_producto": "Alimento", "id_tipo_producto": 1 },
+        "nombre_articulo": "Taco de pescado",
+        "cantidad_producto": 2,
+        "categoria_producto": { "categoria": "Ensaladas", "id_categoria": 2 },
+        "descripcion_articulo": "Taco de pescado empanizado con salsa de chipotle"
+      }
+    ],
+    "combo_descripcion": "Dos tacos de pescado, nachos y agua fresca"
+  },
+  {
+    "baja": null,
+    "foto": "",
+    "combo_id": 9,
+    "combo_nombre": "Combo Flan",
+    "combo_precio": 80.0,
+    "combo_articulos": [
+      {
+        "id_producto": 20,
+        "tipo_producto": { "tipo_producto": "Alimento", "id_tipo_producto": 1 },
+        "nombre_articulo": "Flan",
+        "cantidad_producto": 1,
+        "categoria_producto": { "categoria": "Ensaladas", "id_categoria": 2 },
+        "descripcion_articulo": "Flan tradicional mexicano con caramelo"
+      },
+      {
+        "id_producto": 15,
+        "tipo_producto": { "tipo_producto": "Bebida", "id_tipo_producto": 2 },
+        "nombre_articulo": "Coca-cola",
+        "cantidad_producto": 2,
+        "categoria_producto": { "categoria": "Fruta", "id_categoria": 1 },
+        "descripcion_articulo": "Coca-cola"
+      }
+    ],
+    "combo_descripcion": "Flan con dos tacos al gusto y una bebida"
+  },
+  {
+    "baja": null,
+    "foto": "",
+    "combo_id": 10,
+    "combo_nombre": "Combo Chiles en Nogada",
+    "combo_precio": 120.0,
+    "combo_articulos": [
+      {
+        "id_producto": 23,
+        "tipo_producto": { "tipo_producto": "Alimento", "id_tipo_producto": 1 },
+        "nombre_articulo": "Chiles en nogada",
+        "cantidad_producto": 1,
+        "categoria_producto": { "categoria": "Ensaladas", "id_categoria": 2 },
+        "descripcion_articulo": "Chiles poblanos rellenos en salsa de nuez"
+      },
+      {
+        "id_producto": 15,
+        "tipo_producto": { "tipo_producto": "Bebida", "id_tipo_producto": 2 },
+        "nombre_articulo": "Coca-cola",
+        "cantidad_producto": 1,
+        "categoria_producto": { "categoria": "Fruta", "id_categoria": 1 },
+        "descripcion_articulo": "Coca-cola"
+      }
+    ],
+    "combo_descripcion": "Chiles en nogada con refresco y flan"
+  },
+  {
+    "baja": null,
+    "foto": "",
+    "combo_id": 11,
+    "combo_nombre": "Combo Chilaquiles",
+    "combo_precio": 95.0,
+    "combo_articulos": [
+      {
+        "id_producto": 20,
+        "tipo_producto": { "tipo_producto": "Alimento", "id_tipo_producto": 1 },
+        "nombre_articulo": "Flan",
+        "cantidad_producto": 1,
+        "categoria_producto": { "categoria": "Ensaladas", "id_categoria": 2 },
+        "descripcion_articulo": "Flan tradicional mexicano con caramelo"
+      },
+      {
+        "id_producto": 11,
+        "tipo_producto": { "tipo_producto": "Alimento", "id_tipo_producto": 1 },
+        "nombre_articulo": "Chilaquiles",
+        "cantidad_producto": 2,
+        "categoria_producto": { "categoria": "Ensaladas", "id_categoria": 2 },
+        "descripcion_articulo": "Chilaquiles verdes y rojos"
+      }
+    ],
+    "combo_descripcion": "Chilaquiles con pollo, refresco y flan"
+  }
+]

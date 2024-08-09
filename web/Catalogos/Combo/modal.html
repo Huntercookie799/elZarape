@@ -1,0 +1,59 @@
+<div class="modal fade" id="userForm" tabindex="-1" role="dialog" aria-labelledby="modalTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg mini">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="modalTitle">DETALLE DE COMBO</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form id="myForm">
+                    <div class="card imgholder">
+                        <label for="imgInput" class="upload">
+                            <input type="file" id="imgInput" required>
+                            <i class="">+</i>
+                        </label>
+                        <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/10329dbd-dbc8-426a-923b-3da6354ba382/dhlzwr1-662ac3f7-54aa-4f74-ad83-cf899a19267d.png/v1/fill/w_1280,h_1123,q_80,strp/puppy_meme_falin_and_laios_by_exhorsecat_dhlzwr1-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTEyMyIsInBhdGgiOiJcL2ZcLzEwMzI5ZGJkLWRiYzgtNDI2YS05MjNiLTNkYTYzNTRiYTM4MlwvZGhsendyMS02NjJhYzNmNy01NGFhLTRmNzQtYWQ4My1jZjg5OWExOTI2N2QucG5nIiwid2lkdGgiOiI8PTEyODAifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.LiZr83Zy8QmzDkNvS5efZvtboeKD_fonYigqR-rGiio" alt="Previsualización de la imagen" id="imgPreview" class="imgEsp">
+                    </div>
+                    <div class="inputField">
+                        <div>
+                            <label for="comboName">Nombre:</label>
+                            <input type="text" id="comboName" required>
+                        </div>
+                        <div>
+                            <label for="descripcion">Descripción:</label>
+                            <input type="text" id="descripcion" required>
+                        </div>
+                        <div>
+                            <label for="precio">Precio:</label>
+                            <input type="number" id="precio" step="0.01" min="0" required>
+                        </div>
+                        
+                        <button type="button" class="btn btn-secondary mb-3" id="addRowBtn" onclick="addNewRow()">Agregar fila</button>
+                        <div class="table-container">
+                            <div class="table-wrapper">
+                                <table class="table table-striped" id="comboDetailsTable">
+                                    <thead>
+                                        <tr>
+                                            <th>Tipo</th>
+                                            <th>Categoría</th>
+                                            <th>Nombre</th>
+                                            <th>Cantidad</th>
+                                            <th>Acciones</th> <!-- Nueva columna para acciones -->
+                                        </tr>
+                                    </thead>
+                                    <tbody id="dataEdit">
+                                        <!-- Aquí se agregarán los artículos del combo -->
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="submit" form="myForm" class="btn btn-primary" id="submitBtn">Guardar</button>
+            </div>
+        </div>
+    </div>
+</div>

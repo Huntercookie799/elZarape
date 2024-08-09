@@ -1,0 +1,310 @@
+[
+    {
+        "id_producto": 15,
+        "tipo_producto": {
+            "tipo_producto": "Bebida",
+            "id_tipo_producto": 2
+        },
+        "nombre_articulo": "Refresco de cola",
+        "cantidad_producto": 1,
+        "categoria_producto": {
+            "categoria": "Fruta",
+            "id_categoria": 1
+        },
+        "descripcion_articulo": "Coca-cola"
+    },
+    {
+        "id_producto": 14,
+        "tipo_producto": {
+            "tipo_producto": "Alimento",
+            "id_tipo_producto": 1
+        },
+        "nombre_articulo": "Hamburgesa sencilla",
+        "cantidad_producto": 2,
+        "categoria_producto": {
+            "categoria": "Ensaladas",
+            "id_categoria": 2
+        },
+        "descripcion_articulo": "Hamburgesa"
+    },
+    {
+        "id_producto": 1,
+        "tipo_producto": {
+            "tipo_producto": "Alimento",
+            "id_tipo_producto": 1
+        },
+        "nombre_articulo": "Taco de casa",
+        "cantidad_producto": 2,
+        "categoria_producto": {
+            "categoria": "Ensaladas",
+            "id_categoria": 2
+        },
+        "descripcion_articulo": "Taco de pastor"
+    },
+    {
+        "id_producto": 2,
+        "tipo_producto": {
+            "tipo_producto": "Alimento",
+            "id_tipo_producto": 1
+        },
+        "nombre_articulo": "Taco de carnitas",
+        "cantidad_producto": 2,
+        "categoria_producto": {
+            "categoria": "Ensaladas",
+            "id_categoria": 2
+        },
+        "descripcion_articulo": "Taco de carne asada"
+    },
+    {
+        "id_producto": 1,
+        "tipo_producto": {
+            "tipo_producto": "Alimento",
+            "id_tipo_producto": 1
+        },
+        "nombre_articulo": "Taco de casa",
+        "cantidad_producto": 4,
+        "categoria_producto": {
+            "categoria": "Ensaladas",
+            "id_categoria": 2
+        },
+        "descripcion_articulo": "Taco de pastor"
+    },
+    {
+        "id_producto": 15,
+        "tipo_producto": {
+            "tipo_producto": "Bebida",
+            "id_tipo_producto": 2
+        },
+        "nombre_articulo": "Refresco de cola",
+        "cantidad_producto": 2,
+        "categoria_producto": {
+            "categoria": "Fruta",
+            "id_categoria": 1
+        },
+        "descripcion_articulo": "Coca-cola"
+    },
+    {
+        "id_producto": 4,
+        "tipo_producto": {
+            "tipo_producto": "Alimento",
+            "id_tipo_producto": 1
+        },
+        "nombre_articulo": "Enchilada",
+        "cantidad_producto": 3,
+        "categoria_producto": {
+            "categoria": "Ensaladas",
+            "id_categoria": 2
+        },
+        "descripcion_articulo": "Enchilada de pollo"
+    },
+    {
+        "id_producto": 9,
+        "tipo_producto": {
+            "tipo_producto": "Alimento",
+            "id_tipo_producto": 1
+        },
+        "nombre_articulo": "Pozole",
+        "cantidad_producto": 1,
+        "categoria_producto": {
+            "categoria": "Ensaladas",
+            "id_categoria": 2
+        },
+        "descripcion_articulo": "Pozole rojo de cerdo"
+    },
+    {
+        "id_producto": 24,
+        "tipo_producto": {
+            "tipo_producto": "Alimento",
+            "id_tipo_producto": 1
+        },
+        "nombre_articulo": "Tacos de barbacoa",
+        "cantidad_producto": 6,
+        "categoria_producto": {
+            "categoria": "Ensaladas",
+            "id_categoria": 2
+        },
+        "descripcion_articulo": "Tacos de barbacoa con cebolla y cilantro"
+    },
+    {
+        "id_producto": 15,
+        "tipo_producto": {
+            "tipo_producto": "Bebida",
+            "id_tipo_producto": 2
+        },
+        "nombre_articulo": "Refresco de cola",
+        "cantidad_producto": 3,
+        "categoria_producto": {
+            "categoria": "Fruta",
+            "id_categoria": 1
+        },
+        "descripcion_articulo": "Coca-cola"
+    },
+    {
+        "id_producto": 21,
+        "tipo_producto": {
+            "tipo_producto": "Alimento",
+            "id_tipo_producto": 1
+        },
+        "nombre_articulo": "Taco de pescado",
+        "cantidad_producto": 2,
+        "categoria_producto": {
+            "categoria": "Ensaladas",
+            "id_categoria": 2
+        },
+        "descripcion_articulo": "Taco de pescado empanizado con salsa de chipotle"
+    },
+    {
+        "id_producto": 18,
+        "tipo_producto": {
+            "tipo_producto": "Alimento",
+            "id_tipo_producto": 1
+        },
+        "nombre_articulo": "Nachos",
+        "cantidad_producto": 1,
+        "categoria_producto": {
+            "categoria": "Ensaladas",
+            "id_categoria": 2
+        },
+        "descripcion_articulo": "Nachos con queso, jalapeños y guacamole"
+    },
+    {
+        "id_producto": 22,
+        "tipo_producto": {
+            "tipo_producto": "Alimento",
+            "id_tipo_producto": 1
+        },
+        "nombre_articulo": "Quesadilla de hongos",
+        "cantidad_producto": 1,
+        "categoria_producto": {
+            "categoria": "Ensaladas",
+            "id_categoria": 2
+        },
+        "descripcion_articulo": "Quesadilla con champiñones y queso"
+    },
+    {
+        "id_producto": 20,
+        "tipo_producto": {
+            "tipo_producto": "Alimento",
+            "id_tipo_producto": 1
+        },
+        "nombre_articulo": "Flan",
+        "cantidad_producto": 1,
+        "categoria_producto": {
+            "categoria": "Ensaladas",
+            "id_categoria": 2
+        },
+        "descripcion_articulo": "Flan tradicional mexicano con caramelo"
+    },
+    {
+        "id_producto": 21,
+        "tipo_producto": {
+            "tipo_producto": "Alimento",
+            "id_tipo_producto": 1
+        },
+        "nombre_articulo": "Taco de pescado",
+        "cantidad_producto": 2,
+        "categoria_producto": {
+            "categoria": "Ensaladas",
+            "id_categoria": 2
+        },
+        "descripcion_articulo": "Taco de pescado empanizado con salsa de chipotle"
+    },
+    {
+        "id_producto": 18,
+        "tipo_producto": {
+            "tipo_producto": "Alimento",
+            "id_tipo_producto": 1
+        },
+        "nombre_articulo": "Nachos",
+        "cantidad_producto": 1,
+        "categoria_producto": {
+            "categoria": "Ensaladas",
+            "id_categoria": 2
+        },
+        "descripcion_articulo": "Nachos con queso, jalapeños y guacamole"
+    },
+    {
+        "id_producto": 20,
+        "tipo_producto": {
+            "tipo_producto": "Alimento",
+            "id_tipo_producto": 1
+        },
+        "nombre_articulo": "Flan",
+        "cantidad_producto": 1,
+        "categoria_producto": {
+            "categoria": "Ensaladas",
+            "id_categoria": 2
+        },
+        "descripcion_articulo": "Flan tradicional mexicano con caramelo"
+    },
+    {
+        "id_producto": 15,
+        "tipo_producto": {
+            "tipo_producto": "Bebida",
+            "id_tipo_producto": 2
+        },
+        "nombre_articulo": "Refresco de cola",
+        "cantidad_producto": 2,
+        "categoria_producto": {
+            "categoria": "Fruta",
+            "id_categoria": 1
+        },
+        "descripcion_articulo": "Coca-cola"
+    },
+    {
+        "id_producto": 23,
+        "tipo_producto": {
+            "tipo_producto": "Alimento",
+            "id_tipo_producto": 1
+        },
+        "nombre_articulo": "Chiles en nogada",
+        "cantidad_producto": 1,
+        "categoria_producto": {
+            "categoria": "Ensaladas",
+            "id_categoria": 2
+        },
+        "descripcion_articulo": "Chiles poblanos rellenos en salsa de nuez"
+    },
+    {
+        "id_producto": 15,
+        "tipo_producto": {
+            "tipo_producto": "Bebida",
+            "id_tipo_producto": 2
+        },
+        "nombre_articulo": "Refresco de cola",
+        "cantidad_producto": 1,
+        "categoria_producto": {
+            "categoria": "Fruta",
+            "id_categoria": 1
+        },
+        "descripcion_articulo": "Coca-cola"
+    },
+    {
+        "id_producto": 11,
+        "tipo_producto": {
+            "tipo_producto": "Alimento",
+            "id_tipo_producto": 1
+        },
+        "nombre_articulo": "Chilaquiles",
+        "cantidad_producto": 2,
+        "categoria_producto": {
+            "categoria": "Ensaladas",
+            "id_categoria": 2
+        },
+        "descripcion_articulo": "Chilaquiles verdes con pollo"
+    },
+    {
+        "id_producto": 20,
+        "tipo_producto": {
+            "tipo_producto": "Alimento",
+            "id_tipo_producto": 1
+        },
+        "nombre_articulo": "Flan",
+        "cantidad_producto": 1,
+        "categoria_producto": {
+            "categoria": "Ensaladas",
+            "id_categoria": 2
+        },
+        "descripcion_articulo": "Flan tradicional mexicano con caramelo"
+    }
+]
