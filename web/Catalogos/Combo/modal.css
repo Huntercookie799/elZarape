@@ -69,6 +69,7 @@
 
 .table-container {
     position: relative;
+    width: 100%;
 }
 
 .table-wrapper {

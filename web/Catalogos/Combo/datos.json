@@ -4,78 +4,78 @@
     "foto": "",
     "combo_id": 1,
     "combo_nombre": "Almuerzo de gringo",
-    "combo_precio": 111.0,
+    "combo_precio": 120.0,
     "combo_articulos": [
       {
         "id_producto": 14,
         "tipo_producto": { "tipo_producto": "Alimento", "id_tipo_producto": 1 },
-        "nombre_articulo": "Hamburguesa sencilla",
+        "nombre_articulo": "Tostada de atún",
         "cantidad_producto": 2,
         "categoria_producto": { "categoria": "Ensaladas", "id_categoria": 2 },
-        "descripcion_articulo": "Pan con carne,lechuga,jitomate y cebolla"
+        "descripcion_articulo": "Crujientes tostadas de maíz coronadas con una mezcla fresca de atún marinado, aguacate cremoso, y un toque de salsa de soya. Acompañadas de cebolla morada y cilantro fresco para un bocado lleno de sabor."
       },
       {
         "id_producto": 15,
         "tipo_producto": { "tipo_producto": "Bebida", "id_tipo_producto": 2 },
-        "nombre_articulo": "Coca-cola",
+        "nombre_articulo": "Papas bravas",
         "cantidad_producto": 1,
         "categoria_producto": { "categoria": "Fruta", "id_categoria": 1 },
-        "descripcion_articulo": "Coca-cola"
+        "descripcion_articulo": "Deliciosas papas fritas, crujientes por fuera y suaves por dentro, servidas con una salsa brava picante y alioli suave."
       }
     ],
-    "combo_descripcion": "Dos hamburguesas sencillas con dos refrescos del sabor de su preferencia"
+    "combo_descripcion": "Jugosa hamburguesa de res, perfectamente sazonada y cocinada a la parrilla, acompañada de crujientes papas fritas y una ensalada fresca. Incluye una bebida refrescante a tu elección y un postre casero para endulzar tu comida."
   },
   {
     "baja": null,
     "foto": "",
     "combo_id": 2,
     "combo_nombre": "A la mexicana",
-    "combo_precio": 50.0,
+    "combo_precio": 150.0,
     "combo_articulos": [
       {
         "id_producto": 2,
         "tipo_producto": { "tipo_producto": "Alimento", "id_tipo_producto": 1 },
-        "nombre_articulo": "Taco de carnitas",
+        "nombre_articulo": "Agua de Jamaica",
         "cantidad_producto": 2,
         "categoria_producto": { "categoria": "Ensaladas", "id_categoria": 2 },
-        "descripcion_articulo": "Tacos de carne a elegir"
+        "descripcion_articulo": "Agua de Jamaica de 1L"
       },
       {
         "id_producto": 1,
         "tipo_producto": { "tipo_producto": "Alimento", "id_tipo_producto": 1 },
-        "nombre_articulo": "Taco de casa",
+        "nombre_articulo": "Agua de Horcahata",
         "cantidad_producto": 2,
         "categoria_producto": { "categoria": "Ensaladas", "id_categoria": 2 },
-        "descripcion_articulo": "Taco con variedad de carne"
+        "descripcion_articulo": "Agua de Horachata de 1L"
       }
     ],
-    "combo_descripcion": "Dos tacos al pastor, dos tacos de carne azada"
+    "combo_descripcion": "Incluye tacos de carnitas, jugosos y llenos de sabor, acompañados de cebolla, cilantro y limón. Acompáñalos con un elote asado cubierto de mantequilla, queso y chile en polvo. Elige entre nuestras salsas frescas, roja y verde, y complementa con una ensalada mexicana refrescante y arroz a la mexicana. Todo servido con tortillas de maíz recién hechas."
   },
   {
     "baja": null,
     "foto": "",
     "combo_id": 3,
     "combo_nombre": "Combo Familiar",
-    "combo_precio": 120.0,
+    "combo_precio": 130.0,
     "combo_articulos": [
       {
         "id_producto": 1,
         "tipo_producto": { "tipo_producto": "Alimento", "id_tipo_producto": 1 },
-        "nombre_articulo": "Taco de casa",
+        "nombre_articulo": "Agua de Horcahata",
         "cantidad_producto": 4,
         "categoria_producto": { "categoria": "Ensaladas", "id_categoria": 2 },
-        "descripcion_articulo": "Taco con variedad de carne"
+        "descripcion_articulo": "Agua de Horachata de 1L"
       },
       {
         "id_producto": 15,
         "tipo_producto": { "tipo_producto": "Bebida", "id_tipo_producto": 2 },
-        "nombre_articulo": "Coca-cola",
+        "nombre_articulo": "Papas bravas",
         "cantidad_producto": 2,
         "categoria_producto": { "categoria": "Fruta", "id_categoria": 1 },
-        "descripcion_articulo": "Coca-cola"
+        "descripcion_articulo": "Deliciosas papas fritas, crujientes por fuera y suaves por dentro, servidas con una salsa brava picante y alioli suave."
       }
     ],
-    "combo_descripcion": "Cuatro tacos de pollo, dos refrescos y guacamole"
+    "combo_descripcion": "Incluye tacos al pastor con piña y cilantro, quesadillas de pollo con guacamole y salsa, nachos con carne molida y queso fundido, y enchiladas verdes con arroz y frijoles. Acompañado de refrescos o agua fresca y pan dulce para el final. Perfecto para 4 a 6 personas."
   },
   {
     "baja": null,
@@ -87,192 +87,192 @@
       {
         "id_producto": 9,
         "tipo_producto": { "tipo_producto": "Alimento", "id_tipo_producto": 1 },
-        "nombre_articulo": "Pozole",
+        "nombre_articulo": "Paloma",
         "cantidad_producto": 1,
         "categoria_producto": { "categoria": "Ensaladas", "id_categoria": 2 },
-        "descripcion_articulo": "Pozole rojo y verde"
+        "descripcion_articulo": "Mezclado de tequila, jugo de lima​ y un agua mineral y con una rodaja de lima."
       },
       {
         "id_producto": 4,
         "tipo_producto": { "tipo_producto": "Alimento", "id_tipo_producto": 1 },
-        "nombre_articulo": "Enchilada",
+        "nombre_articulo": "Agua de Limón",
         "cantidad_producto": 3,
         "categoria_producto": { "categoria": "Ensaladas", "id_categoria": 2 },
-        "descripcion_articulo": "Enchiladas con salsa roja"
+        "descripcion_articulo": "Agua de Limón de 1L"
       }
     ],
-    "combo_descripcion": "Tres enchiladas, un pozole y dos aguas frescas"
+    "combo_descripcion": "Disfruta de unos tacos dorados, crujientes y rellenos de carne jugosa, acompañados de guacamole fresco y salsa picante. Incluye también una porción de nachos con queso fundido, jalapeños y crema agria, además de una enchilada rellena de pollo bañada en nuestra salsa roja especial. Todo esto viene con arroz y frijoles para una experiencia completa, y una bebida refrescante a tu elección."
   },
   {
     "baja": null,
     "foto": "",
     "combo_id": 5,
-    "combo_nombre": "Combo Tacos",
-    "combo_precio": 140.0,
+    "combo_nombre": "Combo Taco",
+    "combo_precio": 85.0,
     "combo_articulos": [
       {
         "id_producto": 24,
         "tipo_producto": { "tipo_producto": "Alimento", "id_tipo_producto": 1 },
-        "nombre_articulo": "Tacos de barbacoa",
+        "nombre_articulo": "Ensalada César",
         "cantidad_producto": 6,
         "categoria_producto": { "categoria": "Ensaladas", "id_categoria": 2 },
-        "descripcion_articulo": "Tortillas con carne a elegir, cebolla y cilantro"
+        "descripcion_articulo": " Mezcla crujiente de lechuga romana, queso parmesano rallado y crotones dorados, aderezada con nuestra cremosa salsa César."
       },
       {
         "id_producto": 15,
         "tipo_producto": { "tipo_producto": "Bebida", "id_tipo_producto": 2 },
-        "nombre_articulo": "Coca-cola",
+        "nombre_articulo": "Papas bravas",
         "cantidad_producto": 3,
         "categoria_producto": { "categoria": "Fruta", "id_categoria": 1 },
-        "descripcion_articulo": "Coca-cola"
+        "descripcion_articulo": "Deliciosas papas fritas, crujientes por fuera y suaves por dentro, servidas con una salsa brava picante y alioli suave."
       }
     ],
-    "combo_descripcion": "Seis tacos de barbacoa y tres refrescos"
+    "combo_descripcion": "Disfruta de tres tacos al estilo tradicional, rellenos con tu elección de carne jugosa, ya sea suculento pastor, tierno asada o sabroso carnitas. Cada taco está adornado con cebolla fresca, cilantro picado y una chispa de limón, todo servido en tortillas de maíz recién hechas. Acompañado de una porción de arroz mexicano y frijoles refritos"
   },
   {
     "baja": null,
     "foto": "",
     "combo_id": 6,
     "combo_nombre": "Combo Burrito",
-    "combo_precio": 85.0,
+    "combo_precio": 90.0,
     "combo_articulos": [
       {
         "id_producto": 18,
         "tipo_producto": { "tipo_producto": "Alimento", "id_tipo_producto": 1 },
-        "nombre_articulo": "Nachos",
+        "nombre_articulo": "Tabla mixta",
         "cantidad_producto": 1,
         "categoria_producto": { "categoria": "Ensaladas", "id_categoria": 2 },
-        "descripcion_articulo": "Nachos con queso, jalapeños "
+        "descripcion_articulo": "Selección de quesos y carnes frías, pan, frutas y aderezos."
       },
       {
         "id_producto": 21,
         "tipo_producto": { "tipo_producto": "Alimento", "id_tipo_producto": 1 },
-        "nombre_articulo": "Taco de pescado",
+        "nombre_articulo": "Pollo con tocino y alcachofas",
         "cantidad_producto": 2,
         "categoria_producto": { "categoria": "Ensaladas", "id_categoria": 2 },
-        "descripcion_articulo": "Taco de pescado empanizado con salsa de chipotle"
+        "descripcion_articulo": "Jugosos filetes de pollo dorados a la perfección, envueltos en crujiente tocino y acompañados de tiernas alcachofas salteadas en un suave toque de ajo y hierbas. "
       }
     ],
-    "combo_descripcion": "Un burrito de carne, nachos y un refresco"
+    "combo_descripcion": "Este combo incluye un burrito grande y jugoso relleno de tu elección de carne (carne asada, pollo a la parrilla, o carnitas), arroz esponjoso, frijoles negros, y una mezcla de queso cheddar y fresco. Está complementado con una generosa porción de guacamole casero, salsa fresca, y crema agria. Acompañado de crujientes totopos y nuestra famosa salsa de la casa."
   },
   {
     "baja": null,
     "foto": "",
     "combo_id": 7,
     "combo_nombre": "Combo Vegetariano",
-    "combo_precio": 70.0,
+    "combo_precio": 50.0,
     "combo_articulos": [
       {
         "id_producto": 20,
         "tipo_producto": { "tipo_producto": "Alimento", "id_tipo_producto": 1 },
-        "nombre_articulo": "Flan",
+        "nombre_articulo": "Pechuga a la plancha",
         "cantidad_producto": 1,
         "categoria_producto": { "categoria": "Ensaladas", "id_categoria": 2 },
-        "descripcion_articulo": "Flan tradicional mexicano con caramelo"
+        "descripcion_articulo": "Jugosa pechuga de pollo cocinada a la plancha, con un corte especial para garantizar su suavidad y sabor. Sazonada con hierbas finas y un toque de aceite de oliva, servida con guarnición de vegetales frescos o una opción de tu elección."
       },
       {
         "id_producto": 22,
         "tipo_producto": { "tipo_producto": "Alimento", "id_tipo_producto": 1 },
-        "nombre_articulo": "Quesadilla de hongos",
+        "nombre_articulo": "Arrechera a la plancha",
         "cantidad_producto": 1,
         "categoria_producto": { "categoria": "Ensaladas", "id_categoria": 2 },
-        "descripcion_articulo": "Quesadilla con champiñones y queso"
+        "descripcion_articulo": "Deliciosos cortes de arrachera, marinados con una mezcla especial de especias y hierbas, cocinados a la perfección en la plancha para conservar su jugosidad y sabor. Servidos con un acompañamiento de verduras salteadas y papas a la francesa, y una salsa de chimichurri que realza su sabor. "
       }
     ],
-    "combo_descripcion": "Quesadilla de hongos, sopa de tortilla y agua de tamarindo"
+    "combo_descripcion": "una opción fresca y sabrosa que incluye enchiladas de espinazo, tortillas de maíz rellenas de espinazo y queso, bañadas en una salsa de chiles, acompañadas de crema y cebolla. Complementa tu comida con tacos de verduras asadas, suaves tortillas rellenas de pimientos, calabacín y champiñones, aderezados con cilantro y limón. Acompaña tu plato con una reconfortante sopa de tortilla, rica en tiras crujientes, aguacate y queso fresco, con un toque de chile pasilla. Además, disfruta de arroz blanco esponjoso y frijoles negros sazonados al estilo tradicional, junto con un cremoso guacamole y crujientes totopos recién horneados."
   },
   {
     "baja": null,
     "foto": "",
     "combo_id": 8,
-    "combo_nombre": "Combo Tacos de Pescado",
-    "combo_precio": 65.0,
+    "combo_nombre": "Combo Pescado",
+    "combo_precio": 100.0,
     "combo_articulos": [
       {
         "id_producto": 18,
         "tipo_producto": { "tipo_producto": "Alimento", "id_tipo_producto": 1 },
-        "nombre_articulo": "Nachos",
+        "nombre_articulo": "Tabla mixta",
         "cantidad_producto": 1,
         "categoria_producto": { "categoria": "Ensaladas", "id_categoria": 2 },
-        "descripcion_articulo": "Nachos con queso, jalapeños "
+        "descripcion_articulo": "Selección de quesos y carnes frías, pan, frutas y aderezos."
       },
       {
         "id_producto": 21,
         "tipo_producto": { "tipo_producto": "Alimento", "id_tipo_producto": 1 },
-        "nombre_articulo": "Taco de pescado",
+        "nombre_articulo": "Pollo con tocino y alcachofas",
         "cantidad_producto": 2,
         "categoria_producto": { "categoria": "Ensaladas", "id_categoria": 2 },
-        "descripcion_articulo": "Taco de pescado empanizado con salsa de chipotle"
+        "descripcion_articulo": "Jugosos filetes de pollo dorados a la perfección, envueltos en crujiente tocino y acompañados de tiernas alcachofas salteadas en un suave toque de ajo y hierbas. "
       }
     ],
-    "combo_descripcion": "Dos tacos de pescado, nachos y agua fresca"
+    "combo_descripcion": "Incluye filetes de pescado empanizados y fritos a la perfección, acompañados de una crujiente ensalada de col y papas a la francesa doradas. Para darle el toque final, sirve con una porción de arroz blanco esponjoso y una salsa tártara casera que realza cada bocado. "
   },
   {
     "baja": null,
     "foto": "",
     "combo_id": 9,
-    "combo_nombre": "Combo Flan",
-    "combo_precio": 80.0,
+    "combo_nombre": "Combo Rapido",
+    "combo_precio": 50.0,
     "combo_articulos": [
       {
         "id_producto": 20,
         "tipo_producto": { "tipo_producto": "Alimento", "id_tipo_producto": 1 },
-        "nombre_articulo": "Flan",
+        "nombre_articulo": "Pechuga a la plancha",
         "cantidad_producto": 1,
         "categoria_producto": { "categoria": "Ensaladas", "id_categoria": 2 },
-        "descripcion_articulo": "Flan tradicional mexicano con caramelo"
+        "descripcion_articulo": "Jugosa pechuga de pollo cocinada a la plancha, con un corte especial para garantizar su suavidad y sabor. Sazonada con hierbas finas y un toque de aceite de oliva, servida con guarnición de vegetales frescos o una opción de tu elección."
       },
       {
         "id_producto": 15,
         "tipo_producto": { "tipo_producto": "Bebida", "id_tipo_producto": 2 },
-        "nombre_articulo": "Coca-cola",
+        "nombre_articulo": "Papas bravas",
         "cantidad_producto": 2,
         "categoria_producto": { "categoria": "Fruta", "id_categoria": 1 },
-        "descripcion_articulo": "Coca-cola"
+        "descripcion_articulo": "Deliciosas papas fritas, crujientes por fuera y suaves por dentro, servidas con una salsa brava picante y alioli suave."
       }
     ],
-    "combo_descripcion": "Flan con dos tacos al gusto y una bebida"
+    "combo_descripcion": "Disfruta de tres tacos al pastor, rellenos de carne de cerdo marinada y asada, acompañados de piña, cebolla, cilantro y una salsa de tu elección. También incluye una quesadilla de pollo, con pollo sazonado, queso fundido y una mezcla de verduras frescas, servida con guacamole y crema. Completa tu experiencia con unos nachos crujientes, cubiertos con queso derretido, frijoles, jalapeños y salsa fresca. Y para refrescarte, elige entre un refresco o una agua fresca. "
   },
   {
     "baja": null,
     "foto": "",
     "combo_id": 10,
-    "combo_nombre": "Combo Chiles en Nogada",
-    "combo_precio": 120.0,
+    "combo_nombre": "Combo Nogada",
+    "combo_precio": 150.0,
     "combo_articulos": [
       {
         "id_producto": 23,
         "tipo_producto": { "tipo_producto": "Alimento", "id_tipo_producto": 1 },
-        "nombre_articulo": "Chiles en nogada",
+        "nombre_articulo": "Filete Homenaje",
         "cantidad_producto": 1,
         "categoria_producto": { "categoria": "Ensaladas", "id_categoria": 2 },
-        "descripcion_articulo": "Chiles poblanos rellenos en salsa de nuez"
+        "descripcion_articulo": "Filete de res a la plancha con cebollas y papas salteadas, acompañado de salsa cremosa de chiles secos."
       },
       {
         "id_producto": 15,
         "tipo_producto": { "tipo_producto": "Bebida", "id_tipo_producto": 2 },
-        "nombre_articulo": "Coca-cola",
+        "nombre_articulo": "Papas bravas",
         "cantidad_producto": 1,
         "categoria_producto": { "categoria": "Fruta", "id_categoria": 1 },
-        "descripcion_articulo": "Coca-cola"
+        "descripcion_articulo": "Deliciosas papas fritas, crujientes por fuera y suaves por dentro, servidas con una salsa brava picante y alioli suave."
       }
     ],
-    "combo_descripcion": "Chiles en nogada con refresco y flan"
+    "combo_descripcion": " incluye chiles poblanos rellenos de una deliciosa mezcla de carne de res y cerdo, complementados con frutas frescas y especias, todo cubierto con una suave crema de nuez y decorado con granos de granada fresca. Acompañamos este plato tradicional con un aromático arroz a la mexicana, cocido con jitomate, cebolla y especias, que realza la suavidad de los chiles en nogada. Además, servimos frijoles negros cocidos a fuego lento, con un toque rústico y sabroso, junto a tortillas de maíz recién hechas, ideales para disfrutar cada bocado. Para añadir un toque extra, incluimos una salsa verde casera, preparada con chiles, tomatillos y especias frescas, perfecta para darle un giro picante a tu comida. "
   },
   {
     "baja": null,
     "foto": "",
     "combo_id": 11,
     "combo_nombre": "Combo Chilaquiles",
-    "combo_precio": 95.0,
+    "combo_precio": 90.0,
     "combo_articulos": [
       {
         "id_producto": 20,
         "tipo_producto": { "tipo_producto": "Alimento", "id_tipo_producto": 1 },
-        "nombre_articulo": "Flan",
+        "nombre_articulo": "Pechuga a la plancha",
         "cantidad_producto": 1,
         "categoria_producto": { "categoria": "Ensaladas", "id_categoria": 2 },
-        "descripcion_articulo": "Flan tradicional mexicano con caramelo"
+        "descripcion_articulo": "Jugosa pechuga de pollo cocinada a la plancha, con un corte especial para garantizar su suavidad y sabor. Sazonada con hierbas finas y un toque de aceite de oliva, servida con guarnición de vegetales frescos o una opción de tu elección."
       },
       {
         "id_producto": 11,
@@ -280,9 +280,9 @@
         "nombre_articulo": "Chilaquiles",
         "cantidad_producto": 2,
         "categoria_producto": { "categoria": "Ensaladas", "id_categoria": 2 },
-        "descripcion_articulo": "Chilaquiles verdes y rojos"
+        "descripcion_articulo": "Totopos de maíz crujientes bañados en salsa verde o roja, cubiertos con queso fresco, crema y cebolla, acompañados con pollo, huevo o carne, ¡un clásico desayuno mexicano!"
       }
     ],
-    "combo_descripcion": "Chilaquiles con pollo, refresco y flan"
+    "combo_descripcion": "Crujientes triángulos de tortilla de maíz, bañados en una salsa de chiles rojos o verdes, según tu preferencia. Acompañados de huevos revueltos o al gusto, y un toque de crema fresca. Servidos con frijoles refritos, queso fresco desmoronado y cebolla morada en rodajas. Para completar, incluye una porción de guacamole y tortillas de maíz calientes."
   }
 ]
