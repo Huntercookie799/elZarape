@@ -1,68 +1,68 @@
 [{
-        "logo": "zar3.jpg",
+        "logo": "img/zar3.jpg",
         "nombre": "El Zarape 1",
         "horario": "09:00 AM - 10:00 PM",
         "ubicacion": "Plaza  City Center",
         "id_sucursal": 0
     },
     {
-        "logo": "zar3.jpg",
+        "logo": "img/zar3.jpg",
         "nombre": "El Zarape 2",
         "horario": "09:00 AM - 10:00 PM",
         "ubicacion": "Blvd Lopez Mateos",
         "id_sucursal": 1
     },
     {
-        "logo": "zar3.jpg",
+        "logo": "img/zar3.jpg",
         "nombre": "El Zarape 3",
         "horario": "10:00 AM - 11:00 PM",
         "ubicacion": "Plaza Mayor",
         "id_sucursal": 2
     },
     {
-        "logo": "zar3.jpg",
+        "logo": "img/zar3.jpg",
         "nombre": "El Zarape 4",
         "horario": "09:00 AM - 10:00 PM",
         "ubicacion": "Centro Comercial Altacia",
         "id_sucursal": 3
     },
     {
-        "logo": "zar3.jpg",
+        "logo": "img/zar3.jpg",
         "nombre": "El Zarape 5",
         "horario": "09:00 AM - 10:00 PM",
         "ubicacion": "Blvd Venustiano Carranza",
         "id_sucursal": 5
     },
     {
-        "logo": "zar3.jpg",
+        "logo": "img/zar3.jpg",
         "nombre": "El Zarape 6",
         "horario": "10:00 AM - 11:00 PM",
         "ubicacion": "Centro Max",
         "id_sucursal": 6
     },
     {
-        "logo": "zar3.jpg",
+        "logo": "img/zar3.jpg",
         "nombre": "El Zarape 7",
         "horario": "09:00 AM - 10:00 PM",
         "ubicacion": "Blvd Mariano Escobedo",
         "id_sucursal": 7
     },
     {
-        "logo": "zar3.jpg",
+        "logo": "img/zar3.jpg",
         "nombre": "El Zarape 8",
         "horario": "09:00 AM - 10:00 PM",
         "ubicacion": "Blvd Francisco Villa",
         "id_sucursal": 8
     },
     {
-        "logo": "zar3.jpg",
+        "logo": "img/zar3.jpg",
         "nombre": "El Zarape 9",
         "horario": "09:00 AM - 10:00 PM",
         "ubicacion": "Blvd Torres Landa",
         "id_sucursal": 9
     },
     {
-        "logo": "zar3.jpg",
+        "logo": "img/zar3.jpg",
         "nombre": "El Zarape 10",
         "horario": "10:00 AM - 11:00 PM",
         "ubicacion": "Centro Comercial Galerias ",
