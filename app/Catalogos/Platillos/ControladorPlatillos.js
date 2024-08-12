@@ -10,8 +10,8 @@ function cargarTabla() {
             <td>${platillos.Descripcion}</td>
             <td>${platillos.Costo}</td>
             <td>
-                <button class="btn" style="background-color: var(--primary-color-light); color: var(--text-color);" onclick='readInfo("${sucursales.logo}", "${sucursales.nombre}", "${sucursales.horario}", "${sucursales.ubicacion}")' data-bs-toggle='modal' data-bs-target='#readData'><i class='bi bi-eye'></i></button>
-                <button class="btn" style="background-color: var(--sidebar-color); color: #fff;" onclick='editInfo(${index}, "${sucursales.logo}", "${sucursales.nombre}", "${sucursales.horario}", "${sucursales.ubicacion}")' data-bs-toggle='modal' data-bs-target='#userForm'><i class='bi bi-pencil-square'></i></button>
+                <button class="btn" style="background-color: var(--primary-color-light); color: var(--text-color);" onclick='readInfo("${platillos.Foto}", "${platillos.Nombre}", "${platillos.Descripcion}", "${platillos.Costo}")' data-bs-toggle='modal' data-bs-target='#readData'><i class='bi bi-eye'></i></button>
+                <button class="btn" style="background-color: var(--sidebar-color); color: #fff;" onclick='editInfo(${index}, "${platillos.Foto}", "${platillos.Nombre}", "${platillos.Descripcion}", "${platillos.Costo}")' data-bs-toggle='modal' data-bs-target='#userForm'><i class='bi bi-pencil-square'></i></button>
                 <button class="btn" style="background-color: var(--toggle-color); color: #fff;" onclick='deleteInfo(${index})'><i class='bi bi-trash'></i></button>
             </td>
         </tr>`;
