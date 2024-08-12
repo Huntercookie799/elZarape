@@ -39,6 +39,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
 // Función para mostrar información en el modal de lectura
 function readInfo(pic, name, desc, cost) {
+    console.log("Pic:", pic);
+    console.log("Name:", name);
+    console.log("Description:", desc);
+    console.log("Cost:", cost);
+
     document.querySelector('.showImg').src = pic;
     document.querySelector('#showName').value = name;
     document.querySelector('#showDescription').value = desc;
@@ -52,9 +57,9 @@ function editInfo(index, pic, name, desc, cost) {
     document.querySelector('.img').src = pic;
     document.querySelector('#name').value = name;
     document.querySelector('#description').value = desc;
-    document.querySelector('#cost').value = cost;
-    document.querySelector('.submit').innerText = "Actualizar Bebida";
-    document.querySelector('#userForm .modal-title').innerText = "Actualizar Bebida";
+    document.querySelector('#cost').value = cost; // Asegúrate de que este campo esté configurado correctamente
+    document.querySelector('.submit').innerText = "Actualizar Platillo";
+    document.querySelector('#userForm .modal-title').innerText = "Actualizar Platillo";
 }
 
 // Función para eliminar información

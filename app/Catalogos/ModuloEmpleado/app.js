@@ -14,7 +14,7 @@ function cargarTabla() {
             <td>${empleado.persona.telDomicilio}</td>
             <td>${empleado.persona.sueldo}</td>
             <td>${empleado.sucursal ? empleado.sucursal.sucursal : 'N/A'}</td>
-            <td>${empleado.persona.Contrasenia}</td> <!-- Mostrar contraseña -->
+            <td>${'*'.repeat(empleado.persona.Contrasenia.length)}</td> <!-- Mostrar contraseña como ***** -->
             <td>
                 <button class='btn btn-success' onclick='readInfo(${index})' data-bs-toggle='modal' data-bs-target='#readData'><i class='bi bi-eye'></i></button>
                 <button class='btn btn-primary' onclick='editInfo(${index})' data-bs-toggle='modal' data-bs-target='#userForm'><i class='bi bi-pencil-square'></i></button>
@@ -36,6 +36,14 @@ document.addEventListener("DOMContentLoaded", () => {
 document.getElementById('myForm').addEventListener('submit', (e) => {
     e.preventDefault();
 
+    const sueldoField = document.querySelector('#sueldo');
+    let sueldoValue = sueldoField.value;
+
+    // Agregar el símbolo $ si no está presente
+    if (!sueldoValue.startsWith('$')) {
+        sueldoValue = `$${sueldoValue}`;
+    }
+
     const information = {
         persona: {
             nombre: document.querySelector('#name').value,
@@ -43,7 +51,7 @@ document.getElementById('myForm').addEventListener('submit', (e) => {
             apellidoMaterno: document.querySelector('#apellidoMaterno').value,
             NombreDeUsuario: document.querySelector('#usuario').value,
             telDomicilio: document.querySelector('#telefono').value,
-            sueldo: document.querySelector('#sueldo').value,
+            sueldo: sueldoValue, // Guardar sueldo formateado
             Contrasenia: document.querySelector('#contrasenia').value // Guardar contraseña
         },
         sucursal: {
@@ -61,8 +69,14 @@ document.getElementById('myForm').addEventListener('submit', (e) => {
 
     localStorage.setItem('empleados', JSON.stringify(getData));
     cargarTabla();
+
+    // Limpiar el formulario
     document.getElementById('myForm').reset();
     document.querySelector('#sucursal').value = ''; // Limpiar el campo de sucursal
+
+    // Cerrar el modal
+    const modal = bootstrap.Modal.getInstance(document.getElementById('userForm'));
+    modal.hide();
 });
 
 function readInfo(index) {
@@ -74,7 +88,7 @@ function readInfo(index) {
     document.querySelector('#showTelefono').value = empleado.persona.telDomicilio;
     document.querySelector('#showSueldo').value = empleado.persona.sueldo;
     document.querySelector('#showSucursal').value = empleado.sucursal ? empleado.sucursal.sucursal : 'N/A';
-    document.querySelector('#showContrasenia').value = empleado.persona.Contrasenia; // Mostrar contraseña
+    document.querySelector('#showContrasenia').value = empleado.persona.Contrasenia; // Mostrar contraseña en el modal
 }
 
 function editInfo(index) {
@@ -84,9 +98,9 @@ function editInfo(index) {
     document.querySelector('#apellidoMaterno').value = empleado.persona.apellidoMaterno;
     document.querySelector('#usuario').value = empleado.persona.NombreDeUsuario;
     document.querySelector('#telefono').value = empleado.persona.telDomicilio;
-    document.querySelector('#sueldo').value = empleado.persona.sueldo;
+    document.querySelector('#sueldo').value = empleado.persona.sueldo.replace('$', '');
     document.querySelector('#sucursal').value = empleado.sucursal ? empleado.sucursal.sucursal : '';
-    document.querySelector('#contrasenia').value = empleado.persona.Contrasenia; // Cargar contraseña
+    document.querySelector('#contrasenia').value = empleado.persona.Contrasenia; // Cargar contraseña para editar
 
     isEdit = true;
     editId = index;
@@ -97,7 +111,3 @@ function deleteInfo(index) {
     localStorage.setItem('empleados', JSON.stringify(getData));
     cargarTabla();
 }
-
-
-
-
