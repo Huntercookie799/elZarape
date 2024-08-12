@@ -66,31 +66,6 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         });
     });
-
-    const tooltips = document.querySelectorAll("[data-tooltip]");
-
-    tooltips.forEach((element) => {
-        const tooltipText = element.getAttribute("data-tooltip");
-        let tooltip = document.createElement("div");
-        tooltip.className = "tooltip";
-        tooltip.textContent = tooltipText;
-        document.body.appendChild(tooltip);
-
-        let debounce;
-
-        element.addEventListener("mousemove", (event) => {
-            clearTimeout(debounce);
-            debounce = setTimeout(() => {
-                tooltip.style.display = "block";
-                tooltip.style.top = event.clientY + 10 + "px";
-                tooltip.style.left = event.clientX + 10 + "px";
-            }, 10);
-        });
-
-        element.addEventListener("mouseout", () => {
-            tooltip.style.display = "none";
-        });
-    });
 });
 
 /*
