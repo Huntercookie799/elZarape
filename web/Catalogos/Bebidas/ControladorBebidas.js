@@ -3,15 +3,15 @@ let getData = []; // Inicialmente vacío
 function cargarTabla() {
     let tabla = document.getElementById('tbody');
     let acumulador = "";
-    getData.forEach((sucursales, index) => {
+    getData.forEach((bebida, index) => {
         acumulador += `<tr>
-            <td><img src="${sucursales.logo}" alt="" width="50" height="50"></td>
-            <td>${sucursales.nombre}</td>
-            <td>${sucursales.horario}</td>
-            <td>${sucursales.ubicacion}</td>
+            <td><img src="${bebida.Foto}" alt="" width="50" height="50"></td>
+            <td>${bebida.Nombre}</td>
+            <td>${bebida.Descripcion}</td>
+            <td>${bebida.Costo}</td>
             <td>
-                <button class='btn btn-success' onclick='readInfo("${sucursales.logo}", "${sucursales.nombre}", "${sucursales.horario}", "${sucursales.ubicacion}")' data-bs-toggle='modal' data-bs-target='#readData'><i class='bi bi-eye'></i></button>
-                <button class='btn btn-primary' onclick='editInfo(${index}, "${sucursales.logo}", "${sucursales.nombre}", "${sucursales.horario}", "${sucursales.ubicacion}")' data-bs-toggle='modal' data-bs-target='#userForm'><i class='bi bi-pencil-square'></i></button>
+                <button class='btn btn-success' onclick='readInfo("${bebida.Foto}", "${bebida.Nombre}", "${bebida.Descripcion}", "${bebida.Costo}")' data-bs-toggle='modal' data-bs-target='#readData'><i class='bi bi-eye'></i></button>
+                <button class='btn btn-primary' onclick='editInfo(${index}, "${bebida.Foto}", "${bebida.Nombre}", "${bebida.Descripcion}", "${bebida.Costo}")' data-bs-toggle='modal' data-bs-target='#userForm'><i class='bi bi-pencil-square'></i></button>
                 <button class='btn btn-danger' onclick='deleteInfo(${index})'><i class='bi bi-trash'></i></button>
             </td>
         </tr>`;
@@ -21,16 +21,16 @@ function cargarTabla() {
 
 // Cargar los datos desde el archivo JSON o almacenamiento local
 document.addEventListener('DOMContentLoaded', () => {
-    const storedData = localStorage.getItem('sucursales');
+    const storedData = localStorage.getItem('bebidas');
     if (storedData) {
         getData = JSON.parse(storedData);
         cargarTabla();
     } else {
-        fetch('sucursales.json') // Cambiado el nombre del archivo JSON
+        fetch('DataBebidas.json')
             .then(response => response.json())
             .then(data => {
                 getData = data;
-                localStorage.setItem('sucursales', JSON.stringify(getData)); // Guardar los datos en localStorage
+                localStorage.setItem('bebidas', JSON.stringify(getData)); // Guardar los datos en localStorage
                 cargarTabla();
             })
             .catch(error => console.error('Error al cargar los datos:', error));
@@ -53,20 +53,20 @@ function editInfo(index, pic, name, desc, cost) {
     document.querySelector('#name').value = name;
     document.querySelector('#description').value = desc;
     document.querySelector('#cost').value = cost;
-    document.querySelector('.submit').innerText = "Actualizar Sucursal";
-    document.querySelector('#userForm .modal-title').innerText = "Actualizar Sucursal";
+    document.querySelector('.submit').innerText = "Actualizar Bebida";
+    document.querySelector('#userForm .modal-title').innerText = "Actualizar Bebida";
 }
 
 // Función para eliminar información
 function deleteInfo(index) {
     if (confirm("¿Estás seguro de que deseas eliminar?")) {
         getData.splice(index, 1);
-        localStorage.setItem("sucursales", JSON.stringify(getData));
+        localStorage.setItem("bebidas", JSON.stringify(getData));
         cargarTabla();
     }
 }
 
-// Guardar o actualizar la sucursal
+// Guardar o actualizar la bebida
 let isEdit = false;
 let editId = null;
 
@@ -74,10 +74,10 @@ document.getElementById('myForm').addEventListener('submit', (e) => {
     e.preventDefault();
 
     const information = {
-        logo: document.querySelector('#imgInput').files.length > 0 ? URL.createObjectURL(document.querySelector('#imgInput').files[0]) : document.querySelector('.img').src,
-        nombre: document.querySelector('#name').value,
-        horario: document.querySelector('#description').value,
-        ubicacion: document.querySelector('#cost').value
+        Foto: document.querySelector('#imgInput').files.length > 0 ? URL.createObjectURL(document.querySelector('#imgInput').files[0]) : document.querySelector('.img').src,
+        Nombre: document.querySelector('#name').value,
+        Descripcion: document.querySelector('#description').value,
+        Costo: document.querySelector('#cost').value
     };
 
     if (!isEdit) {
@@ -87,10 +87,10 @@ document.getElementById('myForm').addEventListener('submit', (e) => {
         getData[editId] = information;
     }
 
-    localStorage.setItem('sucursales', JSON.stringify(getData));
-    document.querySelector('.submit').innerText = "Agregar Sucursal";
-    document.querySelector('#userForm .modal-title').innerText = "Agregar Nueva Sucursal";
+    localStorage.setItem('bebidas', JSON.stringify(getData));
+    document.querySelector('.submit').innerText = "Agregar Bebida";
+    document.querySelector('#userForm .modal-title').innerText = "Agregar Nueva Bebida";
     cargarTabla();
     document.getElementById('myForm').reset();
-    document.querySelector('.img').src = "img/paz.jpg"; // Imagen predeterminada
+    document.querySelector('.img').src = "img/paz.jpg";  // Imagen predeterminada
 });

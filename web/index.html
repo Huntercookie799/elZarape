@@ -47,6 +47,11 @@
                     <div class="accordion-item">
                         <li class="nav-link accordion-header">
                             <a data-tooltip="Administración de Sucursales">
+                                <div class="tooltip">
+                                    Hover over me.
+                                    <span class="tooltiptext">Tooltip text</span>
+                                </div>
+                                
                                 <i class='bx bx-buildings icon'></i>
                                 <span class="text nav-text">Admin. de Sucursales</span> 
                             </a>
@@ -57,18 +62,6 @@
                                     <a href="#" onclick="loadExternalContent('Sucursal')" data-tooltip="Sucursales">
                                         <i class='bx bx-store icon'></i>
                                         <span class="text nav-text">Sucursales</span> 
-                                    </a>
-                                </li>
-                                <li class="nav-link">
-                                    <a href="#" onclick="loadExternalContent('Usuario')" data-tooltip="Usuario">
-                                        <i class='bx bx-user icon'></i>
-                                        <span class="text nav-text">Usuario</span> 
-                                    </a>
-                                </li>
-                                <li class="nav-link">
-                                    <a href="#" onclick="loadExternalContent('PerfilUsuario')" data-tooltip="Perfiles">
-                                        <i class='bx bx-user-circle icon'></i>
-                                        <span class="text nav-text">Perfiles</span> 
                                     </a>
                                 </li>
                             </ul>
@@ -84,63 +77,21 @@
                         <div class="accordion-content">
                             <ul class="menu-links">
                                 <li class="nav-link">
-                                    <a href="#" onclick="loadExternalContent('Producto')" data-tooltip="Productos">
+                                    <a href="#" onclick="loadExternalContent('Platillos')" data-tooltip="Platillos">
                                         <i class='bx bx-food-menu icon'></i>
-                                        <span class="text nav-text">Productos</span> 
+                                        <span class="text nav-text">Platillos</span> 
                                     </a>
                                 </li>
                                 <li class="nav-link">
-                                    <a href="#" onclick="loadExternalContent('CategoriaProducto')" data-tooltip="Categorías de Productos">
-                                        <i class='bx bx-category icon'></i>
-                                        <span class="text nav-text">Categorías de Productos</span> 
+                                    <a href="#" onclick="loadExternalContent('Bebidas')" data-tooltip="Bebidas">
+                                        <i class='bx bx-package icon'></i>
+                                        <span class="text nav-text">Bebidas</span> 
                                     </a>
                                 </li>
                                 <li class="nav-link">
-                                    <a href="#" onclick="loadExternalContent('TipoProducto')" data-tooltip="Tipos de Productos">
-                                        <i class='bx bx-layer icon'></i>
-                                        <span class="text nav-text">Tipos de Productos</span> 
-                                    </a>
-                                </li>
-                                <li class="nav-link">
-                                    <a href="#" onclick="loadExternalContent('Combo')" data-tooltip="Combos">
+                                    <a href="#" onclick="loadExternalContent('Combo')" data-tooltip="Combo">
                                         <i class='bx bx-package icon'></i>
                                         <span class="text nav-text">Combos</span> 
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="accordion-item">
-                        <li class="nav-link accordion-header">
-                            <a data-tooltip="Administración de Comandas">
-                                <i class='bx bx-notepad icon'></i>
-                                <span class="text nav-text">Admin. de Comandas</span> 
-                            </a>
-                        </li>
-                        <div class="accordion-content">
-                            <ul class="menu-links">
-                                <li class="nav-link">
-                                    <a href="#" onclick="loadExternalContent('Comanda')" data-tooltip="Comandas">
-                                        <i class='bx bx-notepad icon'></i>
-                                        <span class="text nav-text">Comandas</span> 
-                                    </a>
-                                </li>
-                                <li class="nav-link">
-                                    <a href="#" onclick="loadExternalContent('ComboComanda')" data-tooltip="Combos en Comandas">
-                                        <i class='bx bx-package icon'></i>
-                                        <span class="text nav-text">Combos en Comandas</span> 
-                                    </a>
-                                </li>
-                                <li class="nav-link">
-                                    <a href="#" onclick="loadExternalContent('ProductoComanda')" data-tooltip="Productos en Comandas">
-                                        <i class='bx bx-food-menu icon'></i>
-                                        <span class="text nav-text">Productos en Comandas</span> 
-                                    </a>
-                                </li>
-                                <li class="nav-link">
-                                    <a href="#" onclick="loadExternalContent('ProductoCombo')" data-tooltip="Productos en Combos">
-                                        <i class='bx bx-food-menu icon'></i>
-                                        <span class="text nav-text">Productos en Combos</span> 
                                     </a>
                                 </li>
                             </ul>
@@ -156,21 +107,9 @@
                         <div class="accordion-content">
                             <ul class="menu-links">
                                 <li class="nav-link">
-                                    <a href="#" onclick="loadExternalContent('Persona')" data-tooltip="Personas">
-                                        <i class='bx bx-user icon'></i>
-                                        <span class="text nav-text">Personas</span> 
-                                    </a>
-                                </li>
-                                <li class="nav-link">
-                                    <a href="#" onclick="loadExternalContent('Empleado')" data-tooltip="Empleados">
+                                    <a href="#" onclick="loadExternalContent('ModuloEmpleado')" data-tooltip="Empleados">
                                         <i class='bx bx-briefcase icon'></i>
                                         <span class="text nav-text">Empleados</span> 
-                                    </a>
-                                </li>
-                                <li class="nav-link">
-                                    <a href="#" onclick="loadExternalContent('Cliente')" data-tooltip="Clientes">
-                                        <i class='bx bx-user icon'></i>
-                                        <span class="text nav-text">Clientes</span> 
                                     </a>
                                 </li>
                             </ul>
@@ -211,7 +150,7 @@
             <img src="Imagenes/bannerr.png" alt="Banner El Zarape">
         </div>
         <div class="contenedor">
-            <img src="Imagenes/TRANS.png" alt="Logo">
+            <img src="Imagenes/TRANS.png" alt="Logo">.
         </div>
     </section>
 

@@ -1,0 +1,12 @@
+[
+    {"persona": {"sueldo": "$1800", "nombre": "Elena", "apellidoPaterno": "González", "Contrasenia": "********", "NombreDeUsuario": "elenagg", "telDomicilio": "(55) 555-9857", "apellidoMaterno": "García"},"sucursal":{"sucursal":"sucursal 1"}},
+    {"persona": {"sueldo": "$1300", "nombre": "Thomas", "apellidoPaterno": "Williams", "Contrasenia": "********", "NombreDeUsuario": "tomws", "telDomicilio": "(52) 555-9482", "apellidoMaterno": "Smith"},"sucursal":{"sucursal":"sucursal 1"}},
+    {"persona": {"sueldo": "$2500", "nombre": "Sophia", "apellidoPaterno": "Martínez", "Contrasenia": "********", "NombreDeUsuario": "sophmm", "telDomicilio": "(52) 555-3412", "apellidoMaterno": "Martínez"},"sucursal":{"sucursal":"sucursal 2"}},
+    {"persona": {"sueldo": "$1400", "nombre": "Lucas", "apellidoPaterno": "Brown", "Contrasenia": "********", "NombreDeUsuario": "lucbl", "telDomicilio": "(52) 555-8122", "apellidoMaterno": "López"},"sucursal":{"sucursal":"sucursal 3"}},
+    {"persona": {"sueldo": "$1600", "nombre": "Isabella", "apellidoPaterno": "Miller", "Contrasenia": "********", "NombreDeUsuario": "isamr", "telDomicilio": "(55) 555-4848", "apellidoMaterno": "Rodríguez"},"sucursal":{"sucursal":"sucursal 1"}},
+    {"persona": {"sueldo": "$1200", "nombre": "Ethan", "apellidoPaterno": "Taylor", "Contrasenia": "********", "NombreDeUsuario": "ethp", "telDomicilio": "(52) 555-7773", "apellidoMaterno": "Pérez"},"sucursal":{"sucursal":"sucursal 3"}},
+    {"persona": {"sueldo": "$1400", "nombre": "Olivia", "apellidoPaterno": "Anderson", "Contrasenia": "********", "NombreDeUsuario": "olivag", "telDomicilio": "(55) 555-5598", "apellidoMaterno": "Gutiérrez"},"sucursal":{"sucursal":"sucursal 3"}},
+    {"persona": {"sueldo": "$1200", "nombre": "Mason", "apellidoPaterno": "Taiman", "Contrasenia": "********", "NombreDeUsuario": "mastc", "telDomicilio": "(52) 555-1189", "apellidoMaterno": "Chávez"},"sucursal":{"sucursal":"sucursal 2"}},
+    {"persona": {"sueldo": "$1200", "nombre": "Ava", "apellidoPaterno": "Hernandez", "Contrasenia": "********", "NombreDeUsuario": "avahf", "telDomicilio": "(52) 555-4444", "apellidoMaterno": "Fernández"},"sucursal":{"sucursal":"sucursal 3"}},
+    {"persona": {"sueldo": "$2000", "nombre": "Emmanuelle", "apellidoPaterno": "Hernandez", "Contrasenia": "********", "NombreDeUsuario": "Emho", "telDomicilio": "(55) 385-56875", "apellidoMaterno": "Oropeza"},"sucursal":{"sucursal":"sucursal 2"}}
+]

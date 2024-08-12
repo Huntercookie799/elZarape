@@ -1,0 +1,25 @@
+[{
+        "logo": "N/A",
+        "nombre": "El Zarape 1",
+        "horario": "12:00am - 10:00pm",
+        "ubicacion": "Blvd Lopez Mateos"
+    },
+    {
+        "logo": "N/A",
+        "nombre": "El Zarape 2",
+        "horario": "10:00am - 9:00pm",
+        "ubicacion": "Plaza Mayor"
+    },
+    {
+        "logo": "N/A",
+        "nombre": "El Zarape 3",
+        "horario": "10:00 am - 10:00 pm",
+        "ubicacion": "Centro Comercial Altacia"
+    },
+    {
+        "logo": "x",
+        "nombre": "El Zarape 4",
+        "horario": "x",
+        "ubicacion": "x"
+    }
+]
