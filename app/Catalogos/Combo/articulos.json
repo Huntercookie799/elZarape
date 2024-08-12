@@ -1,310 +1,178 @@
 [
-    {
-        "id_producto": 15,
-        "tipo_producto": {
-            "tipo_producto": "Bebida",
-            "id_tipo_producto": 2
-        },
-        "nombre_articulo": "Refresco de cola",
-        "cantidad_producto": 1,
-        "categoria_producto": {
-            "categoria": "Fruta",
-            "id_categoria": 1
-        },
-        "descripcion_articulo": "Coca-cola"
-    },
-    {
-        "id_producto": 14,
-        "tipo_producto": {
-            "tipo_producto": "Alimento",
-            "id_tipo_producto": 1
-        },
-        "nombre_articulo": "Hamburgesa sencilla",
-        "cantidad_producto": 2,
-        "categoria_producto": {
-            "categoria": "Ensaladas",
-            "id_categoria": 2
-        },
-        "descripcion_articulo": "Hamburgesa"
-    },
-    {
-        "id_producto": 1,
-        "tipo_producto": {
-            "tipo_producto": "Alimento",
-            "id_tipo_producto": 1
-        },
-        "nombre_articulo": "Taco de casa",
-        "cantidad_producto": 2,
-        "categoria_producto": {
-            "categoria": "Ensaladas",
-            "id_categoria": 2
-        },
-        "descripcion_articulo": "Taco de pastor"
-    },
-    {
-        "id_producto": 2,
-        "tipo_producto": {
-            "tipo_producto": "Alimento",
-            "id_tipo_producto": 1
-        },
-        "nombre_articulo": "Taco de carnitas",
-        "cantidad_producto": 2,
-        "categoria_producto": {
-            "categoria": "Ensaladas",
-            "id_categoria": 2
-        },
-        "descripcion_articulo": "Taco de carne asada"
-    },
-    {
-        "id_producto": 1,
-        "tipo_producto": {
-            "tipo_producto": "Alimento",
-            "id_tipo_producto": 1
-        },
-        "nombre_articulo": "Taco de casa",
-        "cantidad_producto": 4,
-        "categoria_producto": {
-            "categoria": "Ensaladas",
-            "id_categoria": 2
-        },
-        "descripcion_articulo": "Taco de pastor"
-    },
-    {
-        "id_producto": 15,
-        "tipo_producto": {
-            "tipo_producto": "Bebida",
-            "id_tipo_producto": 2
-        },
-        "nombre_articulo": "Refresco de cola",
-        "cantidad_producto": 2,
-        "categoria_producto": {
-            "categoria": "Fruta",
-            "id_categoria": 1
-        },
-        "descripcion_articulo": "Coca-cola"
-    },
-    {
-        "id_producto": 4,
-        "tipo_producto": {
-            "tipo_producto": "Alimento",
-            "id_tipo_producto": 1
-        },
-        "nombre_articulo": "Enchilada",
-        "cantidad_producto": 3,
-        "categoria_producto": {
-            "categoria": "Ensaladas",
-            "id_categoria": 2
-        },
-        "descripcion_articulo": "Enchilada de pollo"
-    },
-    {
-        "id_producto": 9,
-        "tipo_producto": {
-            "tipo_producto": "Alimento",
-            "id_tipo_producto": 1
-        },
-        "nombre_articulo": "Pozole",
-        "cantidad_producto": 1,
-        "categoria_producto": {
-            "categoria": "Ensaladas",
-            "id_categoria": 2
-        },
-        "descripcion_articulo": "Pozole rojo de cerdo"
-    },
-    {
-        "id_producto": 24,
-        "tipo_producto": {
-            "tipo_producto": "Alimento",
-            "id_tipo_producto": 1
-        },
-        "nombre_articulo": "Tacos de barbacoa",
-        "cantidad_producto": 6,
-        "categoria_producto": {
-            "categoria": "Ensaladas",
-            "id_categoria": 2
-        },
-        "descripcion_articulo": "Tacos de barbacoa con cebolla y cilantro"
-    },
-    {
-        "id_producto": 15,
-        "tipo_producto": {
-            "tipo_producto": "Bebida",
-            "id_tipo_producto": 2
-        },
-        "nombre_articulo": "Refresco de cola",
-        "cantidad_producto": 3,
-        "categoria_producto": {
-            "categoria": "Fruta",
-            "id_categoria": 1
-        },
-        "descripcion_articulo": "Coca-cola"
-    },
-    {
-        "id_producto": 21,
-        "tipo_producto": {
-            "tipo_producto": "Alimento",
-            "id_tipo_producto": 1
-        },
-        "nombre_articulo": "Taco de pescado",
-        "cantidad_producto": 2,
-        "categoria_producto": {
-            "categoria": "Ensaladas",
-            "id_categoria": 2
-        },
-        "descripcion_articulo": "Taco de pescado empanizado con salsa de chipotle"
-    },
-    {
-        "id_producto": 18,
-        "tipo_producto": {
-            "tipo_producto": "Alimento",
-            "id_tipo_producto": 1
-        },
-        "nombre_articulo": "Nachos",
-        "cantidad_producto": 1,
-        "categoria_producto": {
-            "categoria": "Ensaladas",
-            "id_categoria": 2
-        },
-        "descripcion_articulo": "Nachos con queso, jalapeños y guacamole"
-    },
-    {
-        "id_producto": 22,
-        "tipo_producto": {
-            "tipo_producto": "Alimento",
-            "id_tipo_producto": 1
-        },
-        "nombre_articulo": "Quesadilla de hongos",
-        "cantidad_producto": 1,
-        "categoria_producto": {
-            "categoria": "Ensaladas",
-            "id_categoria": 2
-        },
-        "descripcion_articulo": "Quesadilla con champiñones y queso"
-    },
-    {
-        "id_producto": 20,
-        "tipo_producto": {
-            "tipo_producto": "Alimento",
-            "id_tipo_producto": 1
-        },
-        "nombre_articulo": "Flan",
-        "cantidad_producto": 1,
-        "categoria_producto": {
-            "categoria": "Ensaladas",
-            "id_categoria": 2
-        },
-        "descripcion_articulo": "Flan tradicional mexicano con caramelo"
-    },
-    {
-        "id_producto": 21,
-        "tipo_producto": {
-            "tipo_producto": "Alimento",
-            "id_tipo_producto": 1
-        },
-        "nombre_articulo": "Taco de pescado",
-        "cantidad_producto": 2,
-        "categoria_producto": {
-            "categoria": "Ensaladas",
-            "id_categoria": 2
-        },
-        "descripcion_articulo": "Taco de pescado empanizado con salsa de chipotle"
-    },
-    {
-        "id_producto": 18,
-        "tipo_producto": {
-            "tipo_producto": "Alimento",
-            "id_tipo_producto": 1
-        },
-        "nombre_articulo": "Nachos",
-        "cantidad_producto": 1,
-        "categoria_producto": {
-            "categoria": "Ensaladas",
-            "id_categoria": 2
-        },
-        "descripcion_articulo": "Nachos con queso, jalapeños y guacamole"
-    },
-    {
-        "id_producto": 20,
-        "tipo_producto": {
-            "tipo_producto": "Alimento",
-            "id_tipo_producto": 1
-        },
-        "nombre_articulo": "Flan",
-        "cantidad_producto": 1,
-        "categoria_producto": {
-            "categoria": "Ensaladas",
-            "id_categoria": 2
-        },
-        "descripcion_articulo": "Flan tradicional mexicano con caramelo"
-    },
-    {
-        "id_producto": 15,
-        "tipo_producto": {
-            "tipo_producto": "Bebida",
-            "id_tipo_producto": 2
-        },
-        "nombre_articulo": "Refresco de cola",
-        "cantidad_producto": 2,
-        "categoria_producto": {
-            "categoria": "Fruta",
-            "id_categoria": 1
-        },
-        "descripcion_articulo": "Coca-cola"
-    },
-    {
-        "id_producto": 23,
-        "tipo_producto": {
-            "tipo_producto": "Alimento",
-            "id_tipo_producto": 1
-        },
-        "nombre_articulo": "Chiles en nogada",
-        "cantidad_producto": 1,
-        "categoria_producto": {
-            "categoria": "Ensaladas",
-            "id_categoria": 2
-        },
-        "descripcion_articulo": "Chiles poblanos rellenos en salsa de nuez"
-    },
-    {
-        "id_producto": 15,
-        "tipo_producto": {
-            "tipo_producto": "Bebida",
-            "id_tipo_producto": 2
-        },
-        "nombre_articulo": "Refresco de cola",
-        "cantidad_producto": 1,
-        "categoria_producto": {
-            "categoria": "Fruta",
-            "id_categoria": 1
-        },
-        "descripcion_articulo": "Coca-cola"
-    },
-    {
-        "id_producto": 11,
-        "tipo_producto": {
-            "tipo_producto": "Alimento",
-            "id_tipo_producto": 1
-        },
-        "nombre_articulo": "Chilaquiles",
-        "cantidad_producto": 2,
-        "categoria_producto": {
-            "categoria": "Ensaladas",
-            "id_categoria": 2
-        },
-        "descripcion_articulo": "Chilaquiles verdes con pollo"
-    },
-    {
-        "id_producto": 20,
-        "tipo_producto": {
-            "tipo_producto": "Alimento",
-            "id_tipo_producto": 1
-        },
-        "nombre_articulo": "Flan",
-        "cantidad_producto": 1,
-        "categoria_producto": {
-            "categoria": "Ensaladas",
-            "id_categoria": 2
-        },
-        "descripcion_articulo": "Flan tradicional mexicano con caramelo"
-    }
+  {
+    "id_producto": 15,
+    "tipo_producto": { "tipo_producto": "Bebida", "id_tipo_producto": 2 },
+    "nombre_articulo": "Papas bravas",
+    "cantidad_producto": 1,
+    "categoria_producto": { "categoria": "Fruta", "id_categoria": 1 },
+    "descripcion_articulo": "Deliciosas papas fritas, crujientes por fuera y suaves por dentro, servidas con una salsa brava picante y alioli suave."
+  },
+  {
+    "id_producto": 14,
+    "tipo_producto": { "tipo_producto": "Alimento", "id_tipo_producto": 1 },
+    "nombre_articulo": "Tostada de atún",
+    "cantidad_producto": 2,
+    "categoria_producto": { "categoria": "Ensaladas", "id_categoria": 2 },
+    "descripcion_articulo": "Crujientes tostadas de maíz coronadas con una mezcla fresca de atún marinado, aguacate cremoso, y un toque de salsa de soya. Acompañadas de cebolla morada y cilantro fresco para un bocado lleno de sabor."
+  },
+  {
+    "id_producto": 1,
+    "tipo_producto": { "tipo_producto": "Alimento", "id_tipo_producto": 1 },
+    "nombre_articulo": "Agua de Horcahata",
+    "cantidad_producto": 2,
+    "categoria_producto": { "categoria": "Ensaladas", "id_categoria": 2 },
+    "descripcion_articulo": "Agua de Horachata de 1L"
+  },
+  {
+    "id_producto": 2,
+    "tipo_producto": { "tipo_producto": "Alimento", "id_tipo_producto": 1 },
+    "nombre_articulo": "Agua de Jamaica",
+    "cantidad_producto": 2,
+    "categoria_producto": { "categoria": "Ensaladas", "id_categoria": 2 },
+    "descripcion_articulo": "Agua de Jamaica de 1L"
+  },
+  {
+    "id_producto": 1,
+    "tipo_producto": { "tipo_producto": "Alimento", "id_tipo_producto": 1 },
+    "nombre_articulo": "Agua de Horcahata",
+    "cantidad_producto": 4,
+    "categoria_producto": { "categoria": "Ensaladas", "id_categoria": 2 },
+    "descripcion_articulo": "Agua de Horachata de 1L"
+  },
+  {
+    "id_producto": 15,
+    "tipo_producto": { "tipo_producto": "Bebida", "id_tipo_producto": 2 },
+    "nombre_articulo": "Papas bravas",
+    "cantidad_producto": 2,
+    "categoria_producto": { "categoria": "Fruta", "id_categoria": 1 },
+    "descripcion_articulo": "Deliciosas papas fritas, crujientes por fuera y suaves por dentro, servidas con una salsa brava picante y alioli suave."
+  },
+  {
+    "id_producto": 4,
+    "tipo_producto": { "tipo_producto": "Alimento", "id_tipo_producto": 1 },
+    "nombre_articulo": "Agua de Limón",
+    "cantidad_producto": 3,
+    "categoria_producto": { "categoria": "Ensaladas", "id_categoria": 2 },
+    "descripcion_articulo": "Agua de Limón de 1L"
+  },
+  {
+    "id_producto": 9,
+    "tipo_producto": { "tipo_producto": "Alimento", "id_tipo_producto": 1 },
+    "nombre_articulo": "Paloma",
+    "cantidad_producto": 1,
+    "categoria_producto": { "categoria": "Ensaladas", "id_categoria": 2 },
+    "descripcion_articulo": "Mezclado de tequila, jugo de lima​ y un agua mineral y con una rodaja de lima."
+  },
+  {
+    "id_producto": 24,
+    "tipo_producto": { "tipo_producto": "Alimento", "id_tipo_producto": 1 },
+    "nombre_articulo": "Ensalada César",
+    "cantidad_producto": 6,
+    "categoria_producto": { "categoria": "Ensaladas", "id_categoria": 2 },
+    "descripcion_articulo": " Mezcla crujiente de lechuga romana, queso parmesano rallado y crotones dorados, aderezada con nuestra cremosa salsa César."
+  },
+  {
+    "id_producto": 15,
+    "tipo_producto": { "tipo_producto": "Bebida", "id_tipo_producto": 2 },
+    "nombre_articulo": "Papas bravas",
+    "cantidad_producto": 3,
+    "categoria_producto": { "categoria": "Fruta", "id_categoria": 1 },
+    "descripcion_articulo": "Deliciosas papas fritas, crujientes por fuera y suaves por dentro, servidas con una salsa brava picante y alioli suave."
+  },
+  {
+    "id_producto": 21,
+    "tipo_producto": { "tipo_producto": "Alimento", "id_tipo_producto": 1 },
+    "nombre_articulo": "Pollo con tocino y alcachofas",
+    "cantidad_producto": 2,
+    "categoria_producto": { "categoria": "Ensaladas", "id_categoria": 2 },
+    "descripcion_articulo": "Jugosos filetes de pollo dorados a la perfección, envueltos en crujiente tocino y acompañados de tiernas alcachofas salteadas en un suave toque de ajo y hierbas. "
+  },
+  {
+    "id_producto": 18,
+    "tipo_producto": { "tipo_producto": "Alimento", "id_tipo_producto": 1 },
+    "nombre_articulo": "Tabla mixta",
+    "cantidad_producto": 1,
+    "categoria_producto": { "categoria": "Ensaladas", "id_categoria": 2 },
+    "descripcion_articulo": "Selección de quesos y carnes frías, pan, frutas y aderezos."
+  },
+  {
+    "id_producto": 22,
+    "tipo_producto": { "tipo_producto": "Alimento", "id_tipo_producto": 1 },
+    "nombre_articulo": "Arrachera a la plancha",
+    "cantidad_producto": 1,
+    "categoria_producto": { "categoria": "Ensaladas", "id_categoria": 2 },
+    "descripcion_articulo": "Deliciosos cortes de arrachera, marinados con una mezcla especial de especias y hierbas, cocinados a la perfección en la plancha para conservar su jugosidad y sabor. Servidos con un acompañamiento de verduras salteadas y papas a la francesa, y una salsa de chimichurri que realza su sabor. "
+  },
+  {
+    "id_producto": 20,
+    "tipo_producto": { "tipo_producto": "Alimento", "id_tipo_producto": 1 },
+    "nombre_articulo": "Pechuga a la plancha",
+    "cantidad_producto": 1,
+    "categoria_producto": { "categoria": "Ensaladas", "id_categoria": 2 },
+    "descripcion_articulo": "Jugosa pechuga de pollo cocinada a la plancha, con un corte especial para garantizar su suavidad y sabor. Sazonada con hierbas finas y un toque de aceite de oliva, servida con guarnición de vegetales frescos o una opción de tu elección."
+  },
+  {
+    "id_producto": 21,
+    "tipo_producto": { "tipo_producto": "Alimento", "id_tipo_producto": 1 },
+    "nombre_articulo": "Pollo con tocino y alcachofas",
+    "cantidad_producto": 2,
+    "categoria_producto": { "categoria": "Ensaladas", "id_categoria": 2 },
+    "descripcion_articulo": "Jugosos filetes de pollo dorados a la perfección, envueltos en crujiente tocino y acompañados de tiernas alcachofas salteadas en un suave toque de ajo y hierbas. "
+  },
+  {
+    "id_producto": 18,
+    "tipo_producto": { "tipo_producto": "Alimento", "id_tipo_producto": 1 },
+    "nombre_articulo": "Tabla mixta",
+    "cantidad_producto": 1,
+    "categoria_producto": { "categoria": "Ensaladas", "id_categoria": 2 },
+    "descripcion_articulo": "Selección de quesos y carnes frías, pan, frutas y aderezos."
+  },
+  {
+    "id_producto": 20,
+    "tipo_producto": { "tipo_producto": "Alimento", "id_tipo_producto": 1 },
+    "nombre_articulo": "Pechuga a la plancha",
+    "cantidad_producto": 1,
+    "categoria_producto": { "categoria": "Ensaladas", "id_categoria": 2 },
+    "descripcion_articulo": "Jugosa pechuga de pollo cocinada a la plancha, con un corte especial para garantizar su suavidad y sabor. Sazonada con hierbas finas y un toque de aceite de oliva, servida con guarnición de vegetales frescos o una opción de tu elección."
+  },
+  {
+    "id_producto": 15,
+    "tipo_producto": { "tipo_producto": "Bebida", "id_tipo_producto": 2 },
+    "nombre_articulo": "Papas bravas",
+    "cantidad_producto": 2,
+    "categoria_producto": { "categoria": "Fruta", "id_categoria": 1 },
+    "descripcion_articulo": "Deliciosas papas fritas, crujientes por fuera y suaves por dentro, servidas con una salsa brava picante y alioli suave."
+  },
+  {
+    "id_producto": 23,
+    "tipo_producto": { "tipo_producto": "Alimento", "id_tipo_producto": 1 },
+    "nombre_articulo": "Filete Homenaje",
+    "cantidad_producto": 1,
+    "categoria_producto": { "categoria": "Ensaladas", "id_categoria": 2 },
+    "descripcion_articulo": "Filete de res a la plancha con cebollas y papas salteadas, acompañado de salsa cremosa de chiles secos."
+  },
+  {
+    "id_producto": 15,
+    "tipo_producto": { "tipo_producto": "Bebida", "id_tipo_producto": 2 },
+    "nombre_articulo": "Papas bravas",
+    "cantidad_producto": 1,
+    "categoria_producto": { "categoria": "Fruta", "id_categoria": 1 },
+    "descripcion_articulo": "Deliciosas papas fritas, crujientes por fuera y suaves por dentro, servidas con una salsa brava picante y alioli suave."
+  },
+  {
+    "id_producto": 11,
+    "tipo_producto": { "tipo_producto": "Alimento", "id_tipo_producto": 1 },
+    "nombre_articulo": "Chilaquiles",
+    "cantidad_producto": 2,
+    "categoria_producto": { "categoria": "Ensaladas", "id_categoria": 2 },
+    "descripcion_articulo": "Totopos de maíz crujientes bañados en salsa verde o roja, cubiertos con queso fresco, crema y cebolla, acompañados con pollo, huevo o carne, ¡un clásico desayuno mexicano!"
+  },
+  {
+    "id_producto": 20,
+    "tipo_producto": { "tipo_producto": "Alimento", "id_tipo_producto": 1 },
+    "nombre_articulo": "Pechuga a la plancha",
+    "cantidad_producto": 1,
+    "categoria_producto": { "categoria": "Ensaladas", "id_categoria": 2 },
+    "descripcion_articulo": "Jugosa pechuga de pollo cocinada a la plancha, con un corte especial para garantizar su suavidad y sabor. Sazonada con hierbas finas y un toque de aceite de oliva, servida con guarnición de vegetales frescos o una opción de tu elección."
+  }
 ]

@@ -14,37 +14,40 @@ async function fetchArticulos() {
 }
 
 async function fetchData() {
-    try {
-        const response = await fetch('datos.json');
-        if (!response.ok) throw new Error('Error en la carga de datos');
-        const data = await response.json();
-        return data;
-    } catch (error) {
-        console.error('Error fetching datos:', error);
-        return []; // Retorna un array vacío en caso de error
+    let datosJson = JSON.parse(localStorage.getItem('combos')) || [];
+
+    if (datosJson.length === 0) {
+        try {
+            const response = await fetch('datos.json');
+            datosJson = await response.json();
+
+            localStorage.setItem('combos', JSON.stringify(datosJson));
+        } catch (error) {
+            console.error('Error al cargar los datos:', error);
+            return [];
+        }
+    }else{
+        return datosJson;
     }
 }
 
 async function fillForm(comboId, esEditable = false) {
-    id_combo = comboId;
     esEditableForm = esEditable;
+    id_combo = comboId;
     const data = await fetchData();
     const combo = data.find(comb => comb.combo_id == comboId);
     if (combo) {
         document.getElementById('comboName').value = combo.combo_nombre;
         document.getElementById('descripcion').value = combo.combo_descripcion;
         document.getElementById('precio').value = combo.combo_precio;
-
-        // Cargar la imagen desde localStorage con el ID del combo
-        const storedImage = localStorage.getItem(`comboImage_${comboId}`);
-        if (storedImage) {
-            document.getElementById('imgPreview').src = `data:image/png;base64,${storedImage}`;
+        if (combo.foto) {
+            document.getElementById('imgPreview').src = combo.foto;
         } else {
-            document.getElementById('imgPreview').src = 'path/to/default/image.png'; // Imagen predeterminada si no hay ninguna guardada
+            document.getElementById('imgPreview').src = 'img/combo.png';
         }
 
         const tableBody = document.getElementById('dataEdit');
-        tableBody.innerHTML = ''; // Limpiar la tabla antes de llenarla
+        tableBody.innerHTML = '';
 
         for (const articulo of combo.combo_articulos) {
             await addRow(
@@ -154,7 +157,7 @@ function createComboObject(comboId) {
             nombre_articulo: nombre,
             cantidad_producto: cantidad,
             categoria_producto: { categoria: categoria },
-            descripcion_articulo: descripcionArticulo // Agregar la descripción aquí
+            descripcion_articulo: descripcionArticulo
         });
     }
 
@@ -163,7 +166,8 @@ function createComboObject(comboId) {
         combo_nombre: document.getElementById('comboName').value,
         combo_precio: parseFloat(document.getElementById('precio').value),
         combo_articulos: articulos,
-        combo_descripcion: document.getElementById('descripcion').value
+        combo_descripcion: document.getElementById('descripcion').value,
+        foto: document.getElementById('imgPreview').src
     };
 }
 
@@ -215,7 +219,6 @@ function nuevoConseutivo() {
     return nuevoComboId;
 }
 
-
 async function addNewRow() {
     if (!areAllRowsSaved()) {
         alert("Por favor, guarda todas las filas antes de agregar una nueva.");
@@ -224,10 +227,12 @@ async function addNewRow() {
     await addRow("", "", "", "", true);
 }
 
+
 function limpiarModal() {
     document.getElementById('comboName').value = '';
     document.getElementById('descripcion').value = '';
     document.getElementById('precio').value = '';
+    document.getElementById('imgPreview').src ='img/combo.png';
 
     const tableBody = document.getElementById('dataEdit');
     tableBody.innerHTML = '';
@@ -296,12 +301,12 @@ async function addRow(tipo, categoria, nombre, cantidad, editable = false) {
         </td>
         <td>
             ${editable ?
-            `<button class="btn btn-success btn-sm save-btn">Guardar</button>` :
-            `<button class="btn btn-warning btn-sm edit-btn d-none">Editar</button>`
-        }
-            <button class="btn btn-warning btn-sm edit-btn ${editable ? 'd-none' : ''}">Editar</button>
-            <button class="btn btn-danger btn-sm delete-btn">Eliminar</button>
-        </td>
+                `<button class="btn btn-sm save-btn" style="background-color: var(--primary-color); color: #fff;">Guardar</button>` :
+                `<button class="btn btn-warning btn-sm edit-btn d-none">Editar</button>`
+            }
+                <button class="btn btn-warning btn-sm edit-btn ${editable ? 'd-none' : ''}">Editar</button>
+                <button class="btn btn-danger btn-sm delete-btn">Eliminar</button>
+            </td>
     `;
 
     // Insertar la fila al inicio del tableBody
@@ -431,16 +436,8 @@ document.getElementById('imgInput').addEventListener('change', (event) => {
     const reader = new FileReader();
 
     reader.onloadend = () => {
-        // Convertir la imagen a Base64
         const base64String = reader.result.replace(/^data:.+;base64,/, '');
 
-        // Guardar en localStorage con el nombre del combo
-        const comboName = document.getElementById('comboName').value;
-        if (comboName) {
-            localStorage.setItem(`comboImage_${comboName}`, base64String);
-        }
-
-        // Mostrar la imagen
         document.getElementById('imgPreview').src = `data:image/png;base64,${base64String}`;
     };
 

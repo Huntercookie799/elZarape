@@ -9,24 +9,27 @@ function generarTabla(datosJson) {
     datosJson.forEach(combo => {
         const fila = document.createElement('tr');
         fila.innerHTML = `
-    <td>${combo.combo_nombre}</td>
-    <td>${combo.combo_descripcion}</td>
-    <td>$${combo.combo_precio.toFixed(2)}</td>
-    <td>
-        <button class="btn" style="background-color: var(--primary-color); color: #fff;" onclick="alternarSubTabla(this)">
-            <i class="fas fa-plus"></i>
-        </button>
-        <button class="btn" style="background-color: var(--primary-color-light); color: var(--text-color);" data-bs-toggle="modal" data-bs-target="#userForm" onclick="viewCombo('${combo.combo_id}')">
-            <i class="fas fa-eye"></i>
-        </button>
-        <button class="btn" style="background-color: var(--sidebar-color); color: #fff;" data-bs-toggle="modal" data-bs-target="#userForm" onclick="editCombo('${combo.combo_id}')">
-            <i class="fas fa-edit"></i>
-        </button>
-        <button class="btn" style="background-color: var(--toggle-color); color: #fff;" onclick="deleteCombo('${combo.combo_id}')">
-            <i class="fas fa-trash"></i>
-        </button>
-    </td>
-`;
+            <td>
+                <img src="${combo.foto ? `${combo.foto}` : 'img/combo.png'}" alt="Imagen del combo" style="max-width: 200px; max-height: 200px;"/>
+            </td>
+            <td>${combo.combo_nombre}</td>
+            <td>${combo.combo_descripcion}</td>
+            <td>$${combo.combo_precio.toFixed(2)}</td>
+            <td>
+                <button class="btn" style="background-color: var(--primary-color); color: #fff;" onclick="alternarSubTabla(this)">
+                    <i class="fas fa-plus"></i>
+                </button>
+                <button class="btn" style="background-color: var(--primary-color-light); color: var(--text-color);" data-bs-toggle="modal" data-bs-target="#userForm" onclick="viewCombo('${combo.combo_id}')">
+                    <i class="fas fa-eye"></i>
+                </button>
+                <button class="btn" style="background-color: var(--sidebar-color); color: #fff;" data-bs-toggle="modal" data-bs-target="#userForm" onclick="editCombo('${combo.combo_id}')">
+                    <i class="fas fa-edit"></i>
+                </button>
+                <button class="btn" style="background-color: var(--toggle-color); color: #fff;" onclick="deleteCombo('${combo.combo_id}')">
+                    <i class="fas fa-trash"></i>
+                </button>
+            </td>
+        `;
 
         contenedorDatos.appendChild(fila);
 
@@ -34,7 +37,7 @@ function generarTabla(datosJson) {
         filaSubTabla.className = 'sub-table';
         filaSubTabla.style.display = 'none';
         filaSubTabla.innerHTML = `
-            <td colspan="4">
+            <td colspan="5">
                 <table class="table table-bordered">
                     <thead>
                         <tr>
@@ -86,6 +89,7 @@ async function cargarDatos() {
         }
     }
 
+    console.log(datosJson);
     generarTabla(datosJson);
 }
 
