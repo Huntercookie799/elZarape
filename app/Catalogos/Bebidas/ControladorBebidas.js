@@ -5,7 +5,7 @@ function cargarTabla() {
     let acumulador = "";
     getData.forEach((bebida, index) => {
         acumulador += `<tr>
-            <td><img src="${bebida.Foto}" alt="" width="50" height="50"></td>
+            <td><img src="img/${bebida.Foto}" alt="" width="50" height="50"></td>
             <td>${bebida.Nombre}</td>
             <td>${bebida.Descripcion}</td>
             <td>${bebida.Costo}</td>
@@ -39,12 +39,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 // Función para mostrar información en el modal de lectura
 function readInfo(pic, name, desc, cost) {
-    console.log("Pic:", pic);
-    console.log("Name:", name);
-    console.log("Description:", desc);
-    console.log("Cost:", cost);
-
-    document.querySelector('.showImg').src = pic;
+    document.querySelector('.showImg').src = `img/${pic}`;
     document.querySelector('#showName').value = name;
     document.querySelector('#showDescription').value = desc;
     document.querySelector('#showCost').value = cost;
@@ -54,7 +49,7 @@ function readInfo(pic, name, desc, cost) {
 function editInfo(index, pic, name, desc, cost) {
     isEdit = true;
     editId = index;
-    document.querySelector('.img').src = pic;
+    document.querySelector('.img').src = `img/${pic}`;
     document.querySelector('#name').value = name;
     document.querySelector('#description').value = desc;
     document.querySelector('#cost').value = cost; // Asegúrate de que este campo esté configurado correctamente
@@ -79,7 +74,7 @@ document.getElementById('myForm').addEventListener('submit', (e) => {
     e.preventDefault();
 
     const information = {
-        Foto: document.querySelector('#imgInput').files.length > 0 ? URL.createObjectURL(document.querySelector('#imgInput').files[0]) : document.querySelector('.img').src,
+        Foto: document.querySelector('#imgInput').files.length > 0 ? URL.createObjectURL(document.querySelector('#imgInput').files[0]) : document.querySelector('.img').src.split('/').pop(),
         Nombre: document.querySelector('#name').value,
         Descripcion: document.querySelector('#description').value,
         Costo: document.querySelector('#cost').value
