@@ -1,18 +1,3 @@
-:root {
-    /* ===== Colors ===== */
-    --body-color: #fef3e2;
-    --sidebar-color: #faaf08;
-    --primary-color: #fa812f;
-    --primary-color-light: #fefff5;
-    --toggle-color: #fa4032;
-    --text-color: #707070;
-    --table-header-bg: #fa812f;
-    --table-header-color: #fff;
-    --table-row-bg: #fff;
-    --table-row-hover-bg: #faaf08;
-}
-
-
 .sub-table {
     display: none;
     margin: 10px 0;

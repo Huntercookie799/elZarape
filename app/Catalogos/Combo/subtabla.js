@@ -88,25 +88,28 @@ async function cargarDatos() {
             return;
         }
     }
-
-    console.log(datosJson);
     generarTabla(datosJson);
 }
 
-function deleteCombo(comboNombre) {
-    let combos = JSON.parse(localStorage.getItem('combos')) || [];
+async function deleteCombo(comboId) {
+    const confirmado = await mostrarConfirmacion(
+        '¿Estás seguro?',
+        `¿Deseas eliminar el combo? Esta acción no se puede deshacer.`
+    );
 
-    // Si solo hay un combo, cambia su nombre a '1'
-    if (combos.length === 1) {
-        combos[0]= '1'; // Cambia el nombre del único combo a '1'
+    if (confirmado) {
+        let combos = JSON.parse(localStorage.getItem('combos')) || [];
+
+        if (combos.length === 1) {
+            combos[0] = '';
+        } else {
+            combos = combos.filter(combo => combo.combo_id != comboId);
+        }
+
+        localStorage.setItem('combos', JSON.stringify(combos));
+
+        cargarDatos();
     } else {
-        // Si hay más de un combo, filtra y elimina el combo específico
-        combos = combos.filter(combo => combo.combo_nombre !== comboNombre);
+        console.log('Eliminación cancelada por el usuario.');
     }
-
-    // Guarda los cambios en el localStorage
-    localStorage.setItem('combos', JSON.stringify(combos));
-
-    // Vuelve a cargar los datos
-    cargarDatos();
 }

@@ -8,7 +8,7 @@ async function fetchArticulos() {
         const data = await response.json();
         return data;
     } catch (error) {
-        console.error('Error fetching articulos:', error);
+        mostrarError('Error al cargar los artículos', 'No se pudieron cargar los datos de los artículos.');
         return []; // Retorna un array vacío en caso de error
     }
 }
@@ -23,7 +23,7 @@ async function fetchData() {
 
             localStorage.setItem('combos', JSON.stringify(datosJson));
         } catch (error) {
-            console.error('Error al cargar los datos:', error);
+            mostrarError('Error al cargar los datos', 'No se pudieron cargar los datos de los combos.');
             return [];
         }
     }else{
@@ -71,7 +71,7 @@ async function saveCombo() {
     const precio = parseFloat(document.getElementById('precio').value);
 
     if (!comboName || isNaN(precio)) {
-        alert('Por favor, complete todos los campos correctamente.');
+        mostrarError('Campos incompletos', 'Por favor, complete todos los campos correctamente.');
         return;
     }
 
@@ -85,17 +85,17 @@ async function saveCombo() {
         // Si está en modo edición, buscar el combo para actualizarlo
         const combo = combos.find(combo => combo.combo_id == id_combo);
         if (!combo) {
-            alert('No se encontró el combo para actualizar.');
+            mostrarError('Error al actualizar el combo', 'No se encontró el combo para actualizar.');
             return;
         }
     
         // Actualizar las propiedades del combo existente
         Object.assign(combo, newCombo);
     } else {
-        // Verificar si el ID del combo ya existe
-        const exists = combos.some(combo => combo.combo_id == id_combo);
+        // Verificar si el nombre del combo ya existe
+        const exists = combos.some(combo => combo.combo_nombre == document.getElementById('comboName').value);
         if (exists) {
-            alert('Ya existe un combo con ese ID. Por favor, elija otro ID.');
+            mostrarError('Nombre de combo duplicado', 'Ya existe un combo con ese Nombre. Por favor, elija otro Nombre.');
             return;
         }
     
@@ -120,8 +120,7 @@ async function saveCombo() {
         reader.readAsDataURL(file);
     }
 
-    console.log('Combo guardado:', combos);
-    alert('Combo guardado correctamente!');
+    mostrarExito('Combo guardado correctamente', 'El combo ha sido guardado exitosamente.');
 
     // Llamar a la función para recargar los datos
     cargarDatos();
@@ -176,7 +175,7 @@ function fetchArticulosSync() {
     fetch('articulos.json')
         .then(response => response.json())
         .then(data => articulosData = data)
-        .catch(error => console.error('Error al cargar los artículos:', error));
+        .catch(error => mostrarError('Error al cargar los artículos', 'No se pudieron cargar los datos de los artículos.'));
     return articulosData;
 }
 
@@ -221,7 +220,7 @@ function nuevoConseutivo() {
 
 async function addNewRow() {
     if (!areAllRowsSaved()) {
-        alert("Por favor, guarda todas las filas antes de agregar una nueva.");
+        mostrarAlerta('Fila no guardada', 'Por favor, guarda todas las filas antes de agregar una nueva.');
         return;
     }
     await addRow("", "", "", "", true);
@@ -360,7 +359,7 @@ function saveRow(row) {
     const cantidadInput = row.querySelector('.cantidad-input').value;
 
     if (tipoCell === '') {
-        alert('Por favor, complete los datos correctamente');
+        mostrarError('Datos incompletos', 'Por favor, complete los datos correctamente.');
         return;
     }
 
