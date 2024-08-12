@@ -296,7 +296,7 @@ async function addRow(tipo, categoria, nombre, cantidad, editable = false) {
         </td>
         <td>
             ${editable ?
-            `<button class="btn btn-success btn-sm save-btn">Guardar</button>` :
+            `<button class="btn btn-sm save-btn" style="background-color: var(--primary-color); color: #fff;">Guardar</button>` :
             `<button class="btn btn-warning btn-sm edit-btn d-none">Editar</button>`
         }
             <button class="btn btn-warning btn-sm edit-btn ${editable ? 'd-none' : ''}">Editar</button>
