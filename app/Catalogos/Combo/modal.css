@@ -1,18 +1,3 @@
-:root {
-    --body-color: #fef3e2;
-    --sidebar-color: #faaf08;
-    --primary-color: #fa812f;
-    --primary-color-light: #fefff5;
-    --toggle-color: #fa4032;
-    --text-color: #707070;
-    --table-header-bg: #fa812f;
-    --table-header-color: #fff;
-    --table-row-bg: #fff;
-    --table-row-hover-bg: #faaf08;
-    --font-size: 0.8rem; 
-    --label-color: #707070;
-}
-
 .modal-dialog.modal-lg {
     max-width: 90%;
     margin: 1.75rem auto;
